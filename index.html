@@ -21,6 +21,14 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media-query.css">
+<style>
+        .header-menu{display:flex;gap:32px;align-items:center}
+        .header-menu a{color:#e9e9e9;font-family:'Outfit',sans-serif;font-size:14.5px;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;text-decoration:none;position:relative;padding:5px 0}
+        .header-menu a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:#d4ff00;transition:width .3s ease}
+        .header-menu a:hover{color:#d4ff00}
+        .header-menu a:hover::after{width:100%}
+        @media (max-width:1100px){.header-menu{display:none}}
+    </style>
 </head>
 
 <body>
@@ -40,6 +48,17 @@
     <!-- ======================== Header ========================== -->
     <header id="nav">
         <a class='nav-logo' href='/'>AB.RABBY</a>
+        <nav class="header-menu">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Portfolio</a>
+            <a href="#resume">Resume</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
         <button class="menu-toggle">
             <i class="fa-solid fa-bars"></i>
         </button>
@@ -107,6 +126,10 @@
                         <div class="tech-badge figma">
                             <img src="assets/images/home/figma.png" alt="figma">
                             Figma
+                        </div>
+                        <div class="tech-badge elementor" style="bottom:10%;right:4px;animation-delay:2.5s">
+                            <img src="assets/images/home/elementor.svg" alt="elementor">
+                            Elementor
                         </div>
                         <!-- PERSON IMAGE -->
                         <img class="heroImgPerson" src="assets/images/home/heroImg.png" alt="heroImg">
