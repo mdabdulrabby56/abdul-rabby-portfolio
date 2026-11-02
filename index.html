@@ -7,15 +7,16 @@
 <meta name="description" content="Abdul Rabby is a Web Developer and WordPress Developer at Fleexstudio, specializing in custom Elementor solutions, WordPress theme development, and modern, responsive websites." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,500;10..72,700;10..72,800;10..72,900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 <link rel="stylesheet" href="styles.css" />
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%239333ea'/><stop offset='1' stop-color='%23db2777'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text x='50' y='68' font-size='52' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>A</text></svg>" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f0f17'/><text x='50' y='70' font-size='56' font-family='Arial' font-weight='bold' fill='%23d4ff00' text-anchor='middle'>A</text></svg>" />
 </head>
 <body>
 
 <header class="nav" id="top">
   <div class="container nav-inner">
-    <a href="#top" class="logo">AB<span>.RABBY</span></a>
+    <a href="#top" class="logo">AB<em>.</em>RABBY</a>
     <nav class="nav-links" id="navLinks">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -24,6 +25,7 @@
       <a href="#resume">Resume</a>
       <a href="#contact" class="nav-cta">Contact Me</a>
     </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Switch between dark and light theme" title="Dark / Light switch">☀️</button>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -32,27 +34,27 @@
 
 <main>
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg" aria-hidden="true"></div>
+  <section class="hero" id="hero">
+    <div class="hero-bg-word" aria-hidden="true">AB.RABBY</div>
     <div class="container hero-inner">
       <div class="hero-text reveal">
-        <p class="eyebrow">👋 Hello, I'm</p>
-        <h1 class="hero-name">ABDUL<br />RABBY</h1>
-        <p class="hero-role">Web Developer &amp; WordPress Developer focused on responsive design, high performance, and modern UI/UX — building fast, polished websites for clients worldwide.</p>
-        <div class="hero-ctas">
-          <a href="#work" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        <p class="hero-tag">👋 Hello, I'm</p>
+        <h1 class="hero-name"><span>ABDUL</span><span>RABBY</span></h1>
+        <p class="hero-tagline">Building Modern Websites &amp; Powerful WordPress Experiences. Web Developer &amp; WordPress Developer focused on responsive design, high performance, creative user experiences, and building fast for clients worldwide.</p>
+        <div class="hero-cta-row">
+          <a href="#work" class="btn btn-lime">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
         </div>
-        <ul class="tech-row" aria-label="Core technologies">
-          <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>PHP</li>
-          <li>WordPress</li><li>Elementor</li><li>Figma</li>
-        </ul>
       </div>
-      <div class="hero-photo reveal">
-        <div class="photo-frame">
-          <img src="assets/profile.jpg" alt="Portrait of Abdul Rabby, Web Developer and WordPress Developer" />
-        </div>
-        <div class="photo-badge">WordPress • Elementor • Web Development</div>
+      <div class="hero-person reveal">
+        <div class="hero-person-glow" aria-hidden="true"></div>
+        <img class="hero-img" src="assets/profile-cutout.png" alt="Abdul Rabby, Web Developer and WordPress Developer" />
+        <span class="tech-badge tb-1">HTML</span>
+        <span class="tech-badge tb-2">CSS</span>
+        <span class="tech-badge tb-3">JavaScript</span>
+        <span class="tech-badge tb-4">WordPress</span>
+        <span class="tech-badge tb-5">Elementor</span>
+        <span class="tech-badge tb-6">Figma</span>
       </div>
     </div>
   </section>
@@ -186,42 +188,42 @@
           <p class="project-cat">WordPress • Dental Clinic</p>
           <h3>Tribeca Dental</h3>
           <p>A modern website for a dental practice, designed for clear service presentation and easy appointment enquiries.</p>
-          <a class="btn btn-small btn-ghost" href="#">Live Preview</a>
+          <a class="btn btn-small btn-outline" href="#">Live Preview</a>
         </article>
         <article class="card project reveal">
           <div class="thumb thumb-2"><span>Evans Exterminator</span></div>
           <p class="project-cat">WordPress • Service Company</p>
           <h3>Evans Exterminator</h3>
           <p>Service-focused website for a pest control company, built around fast contact paths and local service pages.</p>
-          <a class="btn btn-small btn-ghost" href="#">Live Preview</a>
+          <a class="btn btn-small btn-outline" href="#">Live Preview</a>
         </article>
         <article class="card project reveal">
           <div class="thumb thumb-3"><span>FleexStudio Hub</span></div>
           <p class="project-cat">Web Development • Agency</p>
           <h3>FleexStudio Hub</h3>
           <p>Internal hub project for Fleexstudio, supporting the agency's design and development workflow.</p>
-          <a class="btn btn-small btn-ghost" href="#">Live Preview</a>
+          <a class="btn btn-small btn-outline" href="#">Live Preview</a>
         </article>
         <article class="card project reveal">
           <div class="thumb thumb-4"><span>RoofPro</span></div>
           <p class="project-cat">WordPress • Roofing Template</p>
           <h3>RoofPro — Roofing Template</h3>
           <p>A roofing company website template with strong calls to action and a layout built for lead generation.</p>
-          <a class="btn btn-small btn-ghost" href="#">Live Preview</a>
+          <a class="btn btn-small btn-outline" href="#">Live Preview</a>
         </article>
         <article class="card project reveal">
           <div class="thumb thumb-5"><span>Corbin Website</span></div>
           <p class="project-cat">Design to WordPress</p>
           <h3>Corbin Website Design</h3>
           <p>Design-to-website build with a clean layout, careful typography, and fully responsive pages.</p>
-          <a class="btn btn-small btn-ghost" href="#">Live Preview</a>
+          <a class="btn btn-small btn-outline" href="#">Live Preview</a>
         </article>
         <article class="card project reveal">
           <div class="thumb thumb-6"><span>Appure</span></div>
           <p class="project-cat">Web App • Vercel</p>
           <h3>Appure</h3>
           <p>A web project developed with modern tooling and deployed on Vercel through a GitHub workflow.</p>
-          <a class="btn btn-small btn-ghost" href="https://appure.vercel.app" target="_blank" rel="noopener">Live Preview</a>
+          <a class="btn btn-small btn-outline" href="https://appure.vercel.app" target="_blank" rel="noopener">Live Preview</a>
         </article>
       </div>
       <p class="note reveal">More live project links are being added — placeholders above can be replaced with real URLs at any time.</p>
@@ -289,7 +291,7 @@
           <input id="email" name="email" type="email" placeholder="john@example.com" required />
           <label for="message">Project Details</label>
           <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
-          <button type="submit" class="btn btn-primary">Send Message</button>
+          <button type="submit" class="btn btn-lime">Send Message</button>
           <p class="form-note" id="formNote"></p>
         </form>
       </div>
