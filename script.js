@@ -1,10 +1,5 @@
-// Dark / Light theme switch
+// Dark / Light theme switch (sun/moon icon visibility is handled in CSS)
 const themeToggle = document.getElementById('themeToggle');
-function paintThemeIcon() {
-  const light = document.documentElement.getAttribute('data-theme') === 'light';
-  themeToggle.textContent = light ? '🌙' : '☀️';
-}
-paintThemeIcon();
 themeToggle.addEventListener('click', () => {
   const light = document.documentElement.getAttribute('data-theme') === 'light';
   if (light) {
@@ -14,7 +9,6 @@ themeToggle.addEventListener('click', () => {
     document.documentElement.setAttribute('data-theme', 'light');
     try { localStorage.setItem('theme', 'light'); } catch (e) {}
   }
-  paintThemeIcon();
 });
 
 // Mobile navigation
