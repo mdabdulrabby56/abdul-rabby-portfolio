@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abdul-rabby-portfolio.vercel.app/sitemap.xml
