@@ -38,7 +38,8 @@
         .about-card h3{font-size:14px!important;letter-spacing:1.6px;white-space:nowrap}
         @media (max-width:480px){.about-card h3{font-size:11px!important}}
         .heroImgPerson{filter:none!important}
-        .hero-person-main{top:13%!important;bottom:0!important;height:auto!important}
+        .hero-person-main{top:13%!important;bottom:0!important;height:auto!important;width:min(620px,48vw)!important;right:4%}
+        @media (max-width:991px){.hero-person-main{width:100%!important}.hero-person-main .heroImgPerson{position:relative!important;inset:auto;width:100%!important;height:auto!important;object-fit:contain}}
         .hero-person-main .heroImgPerson{position:absolute!important;inset:0;width:100%!important;height:100%!important;object-fit:cover;object-position:center top;transform:none}
         .tech-badge{z-index:5!important}
         .tech-badge.html{top:2%}
