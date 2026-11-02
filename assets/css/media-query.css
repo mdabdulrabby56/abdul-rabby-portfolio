@@ -1,0 +1,432 @@
+@media (min-width: 1650px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1290px !important;
+    }
+}
+@media (max-width:1399px) {
+    .hero-name {
+        font-size: 150px;
+    }
+    .hero-name {
+        margin-bottom: 15px;
+    }
+    .hero-bottom {
+        gap: 30px;
+    }
+    .hero-person-main {
+        position: absolute;
+        right: 0%;
+        bottom: 0;
+    }
+    .section-pad {
+        padding: 70px 0;
+    }
+    .tech-badge.react {
+        top: 45%;
+        right: 10%;
+    }
+    .tech-badge.figma {
+        bottom: 18%;
+        left: 50%;
+    }
+    .tech-badge.css {
+        top: 40%;
+        left: 0;
+    }
+}
+@media (max-width:1199px) {
+    .hero-name {
+        font-size: 130px;
+    }
+    .hero-person-main img {
+        height: auto;
+    }
+    .hero-person-main {
+        max-width: 720px;
+    }
+    .hero-person-glow {
+        width: 55%;
+        height: 320px;
+        filter: blur(90px);
+    }
+    .about-row {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .about-buton-main {
+        justify-content: center;
+    }
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #popupTitle {
+        font-size: 60px;
+        line-height: 70px;
+        margin-bottom: 15px;
+    }
+    #popupDesc {
+        margin-bottom: 25px;
+    }
+    .pricing-row {
+        gap: 30px 0;
+    }
+    .active-price {
+        transform: none;
+    }
+    .active-price:hover {
+        transform: none;
+    }
+    .blog-row {
+        gap: 30px 0;
+    }
+    .hero-person-main .tech-badge {
+        display: none;
+    }
+    .hero-person-main .heroImgPerson {
+        height: auto;
+    }
+}
+@media (max-width:991px) {
+    .loader-logo {
+        font-size: 80px;
+    }
+    header {
+        padding: 15px 12px;
+    }
+    .side-menu.active {
+        right: 12px;
+    }
+    .hero-name {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+    }
+    .hero-inner {
+        text-align: center;
+    }
+    .hero-tagline {
+        max-width: 100%;
+    }
+    .hero-cta-row {
+        width: 100%;
+        justify-content: center;
+    }
+    #hero {
+        min-height: 100%;
+        padding-top: 130px;
+    }
+    .hero-person-main {
+        position: unset;
+    }
+    .hero-person-main img {
+        max-width: 100%;
+    }
+    .hero-person-glow {
+        width: 250px;
+        height: 250px;
+        filter: blur(90px);
+    }
+    .big-title {
+        font-size: 70px;
+        line-height: 70px;
+        margin-bottom: 15px;
+    }
+    .about-bio {
+        font-size: 20px;
+        line-height: 33px;
+        margin-bottom: 30px;
+    }
+    .lead-text {
+        font-size: 20px;
+        line-height: 33px;
+    }
+    .section-pad {
+        padding: 50px 0;
+    }
+    .portfolio-skill-wrapper {
+        padding-top: 30px;
+        flex-wrap: wrap;
+    }
+    .frontend-box,
+    .backend-box {
+        padding: 30px;
+    }
+    .services-grid {
+        gap: 20px;
+        margin-top: 30px;
+    }
+    .service-card {
+        padding: 20px;
+    }
+    .popup-right {
+        display: none;
+    }
+    .service-popup {
+        padding: 12px;
+    }
+    .popup-left {
+        padding: 50px 30px;
+    }
+    .popup-container {
+        grid-template-columns: 1fr;
+    }
+    .popup-tech {
+        margin-bottom: 30px;
+    }
+    .work-content h3 {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 13px;
+    }
+    .work-filter {
+        margin: 40px 0;
+    }
+    .rv-tabs {
+        gap: 40px;
+        margin-top: 30px;
+    }
+    .testimonialSwiper {
+        padding-top: 30px;
+    }
+    .pricing-row {
+        margin-top: 40px;
+    }
+    .blog-popup-content h2 {
+        font-size: 45px;
+        line-height: 65px;
+        margin-bottom: 28px;
+    }
+    .popup-tags {
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .popup-share {
+        margin-top: 30px;
+        padding-top: 20px;
+        gap: 20px;
+    }
+    .blog-popup-content {
+        padding: 30px;
+    }
+    .blog-popup-img {
+        height: 340px;
+    }
+    .popup-category {
+        left: 20px;
+        bottom: 20px;
+    }
+    .blog-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    .blog-content {
+        padding: 20px;
+    }
+    .blog-content p {
+        margin-bottom: 25px;
+    }
+    .blog-row,
+    .contact-row {
+        margin-top: 30px;
+    }
+    .contact-input {
+        margin-bottom: 20px;
+    }
+    .contact-input input {
+        width: 100%;
+        height: 58px;
+    }
+    .contact-row {
+        gap: 30px;
+    }
+}
+@media (max-width:767px) {
+    #hero {
+        min-height: 100%;
+        padding-top: 120px;
+    }
+    .about-card h2 {
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .section-pad {
+        padding: 30px 0;
+    }
+    .services-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .work-filter button {
+        height: 40px;
+        padding: 0 16px;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+    .work-filter {
+        gap: 10px;
+    }
+    .work-filter {
+        margin: 30px 0;
+    }
+    .rv-item {
+        padding: 0 0 30px 30px;
+    }
+    .rv-section-label {
+        font-size: 30px;
+        line-height: 37px;
+        margin-bottom: 19px;
+        letter-spacing: 2px;
+    }
+    .testimonial-card {
+        padding: 30px;
+        min-height: auto;
+    }
+    .testimonial-text {
+        margin-bottom: 30px;
+    }
+    .blog-popup-content h2 {
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 25px;
+    }
+    .popup-author {
+        margin-bottom: 20px;
+    }
+    .blog-popup-content p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 12px;
+    }
+    .blogquot-main {
+        padding: 20px;
+    }
+    .blog-popup-content blockquote {
+        padding-left: 20px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .contact-form-main,
+    .contact-info-main {
+        padding: 25px;
+    }
+    .contact-info-card {
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    }
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+@media (max-width:575px) {
+    .hero-name {
+        flex-wrap: wrap;
+        font-size: 90px;
+        font-weight: 700;
+        letter-spacing: 0px;
+    }
+    .hero-tagline {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .hero-person-glow {
+        width: 180px;
+        height: 180px;
+    }
+    .big-title {
+        font-size: 65px;
+        line-height: 65px;
+    }
+    .about-right {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-bio {
+        font-size: 18px;
+        line-height: 31px;
+    }
+    .lead-text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .about-row {
+        gap: 35px;
+    }
+    .skill-box-title {
+        font-size: 40px;
+    }
+    .skill-item-box {
+        margin-bottom: 25px;
+    }
+    .frontend-box,
+    .backend-box {
+        padding: 25px;
+    }
+    .popup-features {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 30px;
+    }
+    .popup-left {
+        padding: 50px 19px;
+    }
+    .work-tags span {
+        padding: 8px 10px;
+    }
+    .work-content {
+        padding: 20px 12px;
+    }
+    .testimonial-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .pricing-card {
+        padding: 25px;
+    }
+    .pricing-top p {
+        margin-bottom: 20px;
+    }
+    .loader-logo {
+        font-size: 40px;
+    }
+}
+@media (max-width:375px) {
+    .hero-name {
+        font-size: 75px;
+    }
+    .big-title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .pricing-top h2 {
+        font-size: 65px;
+        line-height: 65px;
+        margin-bottom: 10px;
+    }
+    .contact-info-card {
+        flex-direction: column;
+    }
+    .contact-info-card span {
+        text-align: center;
+    }
+    .contact-info-card a,
+    .contact-info-card p {
+        text-align: center;
+    }
+    .contact-social {
+        flex-wrap: wrap;
+    }
+    .about-right {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
