@@ -1,314 +1,1219 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Abdul Rabby — Web Developer & WordPress Developer</title>
-<meta name="description" content="Abdul Rabby is a Web Developer and WordPress Developer at Fleexstudio, specializing in custom Elementor solutions, WordPress theme development, and modern, responsive websites." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,500;10..72,700;10..72,800;10..72,900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
-<link rel="stylesheet" href="styles.css" />
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f0f17'/><text x='50' y='70' font-size='56' font-family='Arial' font-weight='bold' fill='%23d4ff00' text-anchor='middle'>A</text></svg>" />
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Rabby — Web Developer &amp; WordPress Developer</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/home/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&amp;family=Outfit:wght@100..900&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-query.css">
 </head>
+
 <body>
-
-<header class="nav" id="top">
-  <div class="container nav-inner">
-    <a href="#top" class="logo">AB<em>.</em>RABBY</a>
-    <nav class="nav-links" id="navLinks">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#services">Services</a>
-      <a href="#work">Work</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact" class="nav-cta">Contact Me</a>
-    </nav>
-    <button class="theme-toggle" id="themeToggle" aria-label="Switch between dark and light theme" title="Dark / Light switch">
-      <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"/></svg>
-      <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008"/></svg>
-    </button>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-<main>
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-bg-word" aria-hidden="true">AB.RABBY</div>
-    <div class="container hero-inner">
-      <div class="hero-text reveal">
-        <p class="hero-tag">👋 Hello, I'm</p>
-        <h1 class="hero-name"><span>ABDUL</span><span>RABBY</span></h1>
-        <p class="hero-tagline">Building Modern Websites &amp; Powerful WordPress Experiences. Web Developer &amp; WordPress Developer focused on responsive design, high performance, creative user experiences, and building fast for clients worldwide.</p>
-        <div class="hero-cta-row">
-          <a href="#work" class="btn btn-lime">View My Work</a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
-        </div>
-      </div>
-      <div class="hero-person reveal">
-        <div class="hero-person-glow" aria-hidden="true"></div>
-        <img class="hero-img" src="assets/profile-cutout.png" alt="Abdul Rabby, Web Developer and WordPress Developer" />
-        <span class="tech-badge tb-1"><img class="badge-ic" src="assets/icon-html5.svg" alt="" />HTML</span>
-        <span class="tech-badge tb-2"><img class="badge-ic" src="assets/icon-css3.svg" alt="" />CSS</span>
-        <span class="tech-badge tb-3"><img class="badge-ic" src="assets/icon-javascript.svg" alt="" />JavaScript</span>
-        <span class="tech-badge tb-4"><img class="badge-ic" src="assets/icon-wordpress.svg" alt="" />WordPress</span>
-        <span class="tech-badge tb-5"><svg class="badge-ic-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.372 0 0 5.372 0 12c0 6.626 5.372 12 12 12s12-5.372 12-12c0-6.626-5.372-12-12-12ZM9 17H7V7H9Zm8 0H11V15h6Zm0-4H11V11h6Zm0-4H11V7h6Z"/></svg>Elementor</span>
-        <span class="tech-badge tb-6"><img class="badge-ic" src="assets/icon-figma.svg" alt="" />Figma</span>
-      </div>
+    <!-- ======================== Preloader ========================== -->
+    <div id="preloader">
+        <p class="loader-logo">
+            <span>A</span>
+            <span>B</span>
+            <span>.</span>
+            <span>R</span>
+            <span>A</span>
+            <span>B</span>
+            <span>B</span>
+            <span>Y</span>
+        </p>
     </div>
-  </section>
-
-  <!-- 01 ABOUT -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="sec-head reveal">
-        <span class="sec-num">01</span>
-        <div>
-          <p class="sec-label">Who I Am</p>
-          <h2 class="sec-title">About <em>Me</em></h2>
-        </div>
-      </div>
-      <div class="about-grid">
-        <div class="about-photo reveal">
-          <img src="assets/profile.jpg" alt="Abdul Rabby portrait" />
-        </div>
-        <div class="reveal">
-          <p class="about-lead">I'm Abdul Rabby, a <strong>Web Developer &amp; WordPress Developer</strong> at Fleexstudio — a UI/UX &amp; web design agency. I bridge the gap between pixel-perfect design and solid engineering, building websites that are not just beautiful, but fast, responsive, and easy to manage.</p>
-          <p class="about-text">My specialty is WordPress: custom theme development, Elementor and Elementor Pro builds, custom Elementor widget development, and turning Figma designs into living websites. Alongside that, I build with modern HTML, CSS, JavaScript, and PHP.</p>
-          <ul class="info-list">
-            <li><span>Role</span> Web &amp; WordPress Developer</li>
-            <li><span>Company</span> Fleexstudio</li>
-            <li><span>Email</span> <a href="mailto:rabby.fleexstudio@gmail.com">rabby.fleexstudio@gmail.com</a></li>
-            <li><span>Status</span> Available for projects</li>
-            <li><span>Languages</span> Bangla, English</li>
-            <li><span>Based in</span> Kushtia, Bangladesh</li>
-          </ul>
-        </div>
-      </div>
+    <!-- ======================== Header ========================== -->
+    <header id="nav">
+        <a class='nav-logo' href='/'>AB.RABBY</a>
+        <button class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+    <div class="side-menu">
+        <a href="#hero" class="nav-link"><i class="ti ti-home"></i>Home</a>
+        <a href="#about" class="nav-link"><i class="ti ti-user"></i>About</a>
+        <a href="#skills" class="nav-link"><i class="ti ti-code"></i>Skills</a>
+        <a href="#services" class="nav-link"><i class="ti ti-layout-grid"></i>Services</a>
+        <a href="#projects" class="nav-link"><i class="ti ti-briefcase"></i>Portfolio</a>
+        <a href="#resume" class="nav-link"><i class="ti ti-file-text"></i>Resume</a>
+        <a href="#testimonials" class="nav-link"><i class="ti ti-blockquote"></i>Testimonials</a>
+        <a href="#pricing" class="nav-link"><i class="ti ti-tag"></i>Pricing</a>
+        <a href="#blog" class="nav-link"><i class="ti ti-brand-blogger"></i>Blog</a>
+        <a href="#contact" class="nav-link"><i class="ti ti-mail"></i>Contact</a>
     </div>
-  </section>
-
-  <!-- 02 SKILLS -->
-  <section class="section alt" id="skills">
-    <div class="container">
-      <div class="sec-head reveal">
-        <span class="sec-num">02</span>
-        <div>
-          <p class="sec-label">Expertise</p>
-          <h2 class="sec-title">My <em>Skills</em></h2>
+    <!-- ======================== HERO Section ========================== -->
+    <section id="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-bg-word">AB.RABBY</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="hero-inner">
+                        <p class="hero-tag">👋 HELLO, I'M</p>
+                        <h1 class="hero-name">
+                            <span class="l1" id="hl1">ABDUL</span>
+                            <span class="l2" id="hl2">RABBY</span>
+                        </h1>
+                        <div class="hero-bottom">
+                            <p class="hero-tagline">
+                                Building modern websites &amp; powerful WordPress experiences — responsive design, high performance, creative user experiences, and clean development for clients worldwide.
+                            </p>
+                            <div class="hero-cta-row">
+                                <a class="btn-quote" href="#projects">
+                                    <i class="ti ti-briefcase"></i> View My Work
+                                </a>
+                                <a class="btn-quote btn-trasp" href="#contact">
+                                    <i class="ti ti-mail"></i> Contact Me
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-person-main">
+                        <!-- BACK GLOW -->
+                        <div class="hero-person-glow"></div>
+                        <div class="tech-badge html">
+                            <img src="assets/images/home/html.png" alt="html">
+                            HTML
+                        </div>
+                        <div class="tech-badge css">
+                            <img src="assets/images/home/css.png" alt="css">
+                            CSS
+                        </div>
+                        <div class="tech-badge js">
+                            <img src="assets/images/home/javascript.png" alt="javascript">
+                            JavaScript
+                        </div>
+                        <div class="tech-badge react">
+                            <img src="assets/images/home/wordpress.svg" alt="wordpress">
+                            WordPress
+                        </div>
+                        <div class="tech-badge figma">
+                            <img src="assets/images/home/figma.png" alt="figma">
+                            Figma
+                        </div>
+                        <!-- PERSON IMAGE -->
+                        <img class="heroImgPerson" src="assets/images/home/heroImg.png" alt="heroImg">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <p class="sec-sub reveal">Technologies and tools I work with every day, crafting for the web.</p>
-      <div class="skills-grid">
-        <div class="skill-group reveal">
-          <h3>Frontend</h3>
-          <div class="bar"><div class="bar-top"><span>HTML / CSS</span><span>95%</span></div><div class="track"><div class="fill" style="--w:95%"></div></div></div>
-          <div class="bar"><div class="bar-top"><span>JavaScript</span><span>85%</span></div><div class="track"><div class="fill" style="--w:85%"></div></div></div>
-          <div class="bar"><div class="bar-top"><span>Responsive Web Design</span><span>96%</span></div><div class="track"><div class="fill" style="--w:96%"></div></div></div>
-          <div class="bar"><div class="bar-top"><span>Figma to Website</span><span>92%</span></div><div class="track"><div class="fill" style="--w:92%"></div></div></div>
+    </section>
+    <!-- ======================== ABOUT Section ========================== -->
+    <section id="about" class="section-pad  page-top-padding">
+        <div class="container">
+            <p class="sec-num">01</p>
+            <div class="row about-row">
+                <div class="col-xl-6 ">
+                    <div class="portrait-frame reveal">
+                        <div class="portrait-placeholder">
+                            <img src="assets/images/home/profile-img.jpg" alt="profile-img">
+                        </div>
+                        <div class="portrait-overlay">
+                            <a href="mailto:rabby.fleexstudio@gmail.com" class="portrait-badge">// rabby.fleexstudio@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="about-info reveal">
+                        <p class="eyebrow abutwho rotate-text">Who I Am</p>
+                        <h2 class="big-title rotate-text"><em>About</em> Me</h2>
+                        <p class="about-bio">I'm Abdul Rabby, a <strong>Full Stack Developer</strong> and WordPress Developer at Fleexstudio, a UI/UX &amp; web design agency in Kushtia, Bangladesh. I turn Figma designs into fast, responsive, pixel-perfect websites with WordPress and Elementor — and build custom Elementor widgets when a project needs more than the defaults.
+                        </p>
+                        <div class="row about-mel-datils">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><i class="ti ti-briefcase"></i> WordPress &amp; Elementor Specialist</li>
+                                    <li><i class="ti ti-brand-upwork"></i> Available for New Projects</li>
+                                    <li><i class="ti ti-mail"></i> rabby.fleexstudio@gmail.com</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><i class="ti ti-users-group"></i> Fleexstudio Team Member</li>
+                                    <li><i class="ti ti-language"></i> Bangla, English</li>
+                                    <li class="mb-0"><i class="ti ti-map-pin"></i> Based in Kushtia, Bangladesh</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="about-right">
+                            <div class="about-card">
+                                <h2 class="counter" data-count="25">0</h2>
+                                <h3>Projects Done</h3>
+                            </div>
+                            <div class="about-card">
+                                <h2 class="counter" data-count="10">0</h2>
+                                <h3>Technologies</h3>
+                            </div>
+                            <div class="about-card">
+                                <h2 class="counter" data-count="6">0</h2>
+                                <h3>Services</h3>
+                            </div>
+                        </div>
+                        <div class="hero-cta-row about-buton-main">
+                            <a class="btn-quote" href="#contact">
+                                <i class="ti ti-mug"></i> Let's Talk
+                            </a>
+                            <a class="btn-quote btn-trasp" href="assets/pdf/resume.pdf" target="_blank">
+                                <i class="ti ti-download"></i> Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="skill-group reveal">
-          <h3>WordPress &amp; Backend</h3>
-          <div class="bar"><div class="bar-top"><span>WordPress</span><span>94%</span></div><div class="track"><div class="fill" style="--w:94%"></div></div></div>
-          <div class="bar"><div class="bar-top"><span>Elementor / Elementor Pro</span><span>96%</span></div><div class="track"><div class="fill" style="--w:96%"></div></div></div>
-          <div class="bar"><div class="bar-top"><span>Custom Elementor Widgets</span><span>90%</span></div><div class="track"><div class="fill" style="--w:90%"></div></div></div>
-          <div class="bar"><div class="bar-top"><span>PHP</span><span>80%</span></div><div class="track"><div class="fill" style="--w:80%"></div></div></div>
+    </section>
+    <!-- ======================== SKILLS Section ========================== -->
+    <section id="skills" class="section-pad">
+        <div class="container">
+            <p class="sec-num">02</p>
+            <p class="eyebrow text-center rotate-text">Expertise</p>
+            <h2 class="big-title text-center rotate-text">My <em>Skills</em></h2>
+            <p class="lead-text text-center rotate-text">Technologies and tools I work with every day to design and build websites.</p>
+            <div class="portfolio-skill-wrapper" id="portfolioSkills">
+                <!--  Frontend  -->
+                <div class="frontend-box">
+                    <h2 class="skill-box-title">frontend</h2>
+                    <div class="skill-item-box" data-progress="95">
+                        <h3 class="skill-name">HTML / CSS</h3>
+                        <div class="skill-percent">
+                            <span class="skill-counter">95</span>%
+                        </div>
+                        <div class="custom-progress-line">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="skill-item-box" data-progress="85">
+                        <h3 class="skill-name">JavaScript</h3>
+                        <div class="skill-percent">
+                            <span class="skill-counter">85</span>%
+                        </div>
+                        <div class="custom-progress-line">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="skill-item-box" data-progress="96">
+                        <h3 class="skill-name">Responsive Design</h3>
+                        <div class="skill-percent">
+                            <span class="skill-counter">96</span>%
+                        </div>
+                        <div class="custom-progress-line">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="skill-item-box" data-progress="92">
+                        <h3 class="skill-name">Figma to Website</h3>
+                        <div class="skill-percent">
+                            <span class="skill-counter">92</span>%
+                        </div>
+                        <div class="custom-progress-line">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <!--  Backend  -->
+                <div class="backend-box">
+                    <h2 class="skill-box-title">WordPress</h2>
+                    <div class="skill-item-box" data-progress="94">
+                        <h3 class="skill-name">WordPress</h3>
+                        <div class="skill-percent">
+                            <span class="skill-counter">94</span>%
+                        </div>
+                        <div class="custom-progress-line">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="skill-item-box" data-progress="96">
+                        <h3 class="skill-name">Elementor / Pro</h3>
+                        <div class="skill-percent">
+                            <span class="skill-counter">96</span>%
+                        </div>
+                        <div class="custom-progress-line">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="skill-item-box" data-progress="90">
+                        <h3 class="skill-name">Custom Widgets</h3>
+                        <div class="skill-percent">
+                            <span class="skill-counter">90</span>%
+                        </div>
+                        <div class="custom-progress-line">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="skill-item-box" data-progress="80">
+                        <h3 class="skill-name">PHP</h3>
+                        <div class="skill-percent">
+                            <span class="skill-counter">80</span>%
+                        </div>
+                        <div class="custom-progress-line">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+    <!-- ======================== SERVICES Section ========================== -->
+    <section id="services" class="section-pad">
+        <div class="container">
+            <p class="sec-num">03</p>
+            <p class="eyebrow text-center  rotate-text">What I Offer</p>
+            <h2 class="big-title text-center  rotate-text">My <em>Services</em></h2>
+            <p class="lead-text text-center  rotate-text">End-to-end digital solutions
+                built with extreme precision and creative vision.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="card-icon">
+                        <img src="assets/images/services/ux-design.png" alt="ux-design">
+                    </div>
+                    <h3 class="card-title  rotate-text">Elementor Customization</h3>
+                    <p class="card-desc">Pixel-perfect Elementor and Elementor Pro customization — headers, footers, popups and full page builds that match your Figma design.</p>
+                    <ul class="card-features">
+                        <li>Elementor &amp; Elementor Pro</li>
+                        <li>Theme Builder</li>
+                        <li>Header &amp; Footer Design</li>
+                        <li>Popup Design</li>
+                    </ul>
+                    <button class="card-link open-popup"> Explore Service
+                        <i class="ti ti-arrow-up-right"></i>
+                    </button>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">
+                        <img src="assets/images/services/front-end-programming.png" alt="front-end-programming">
+                    </div>
+                    <h3 class="card-title  rotate-text">WordPress Theme Development</h3>
+                    <p class="card-desc">Custom WordPress themes built from scratch or from your design — clean structure, fast loading, and easy to manage.</p>
+                    <ul class="card-features">
+                        <li>Theme Customization</li>
+                        <li>Child Themes</li>
+                        <li>Custom Layouts</li>
+                        <li>Clean, Organized Code</li>
+                    </ul>
+                    <button class="card-link open-popup"> Explore Service
+                        <i class="ti ti-arrow-up-right"></i>
+                    </button>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">
+                        <img src="assets/images/services/backend-coding.png" alt="backend-coding">
+                    </div>
+                    <h3 class="card-title  rotate-text">Custom Elementor Widgets</h3>
+                    <p class="card-desc">Custom Elementor widget development for functionality the default widgets cannot deliver — built exactly to your design.</p>
+                    <ul class="card-features">
+                        <li>Custom Controls</li>
+                        <li>Dynamic Content</li>
+                        <li>Reusable Widgets</li>
+                        <li>Clean PHP Code</li>
+                    </ul>
+                    <button class="card-link open-popup"> Explore Service
+                        <i class="ti ti-arrow-up-right"></i>
+                    </button>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">
+                        <img src="assets/images/services/mobile-development.png" alt="mobile-development">
+                    </div>
+                    <h3 class="card-title  rotate-text">Responsive Development</h3>
+                    <p class="card-desc">Fully responsive websites that look and work perfectly on mobile, tablet and desktop — tested on real devices.</p>
+                    <ul class="card-features">
+                        <li>Mobile-First Design</li>
+                        <li>Tablet &amp; Desktop Layouts</li>
+                        <li>Cross-Browser Testing</li>
+                        <li>Touch-Friendly UI</li>
+                    </ul>
+                    <button class="card-link open-popup"> Explore Service
+                        <i class="ti ti-arrow-up-right"></i>
+                    </button>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">
+                        <img src="assets/images/services/brand-image.png" alt="brand-image">
+                    </div>
+                    <h3 class="card-title  rotate-text">HTML to WordPress</h3>
+                    <p class="card-desc">Convert your Figma or HTML design into a complete WordPress website with Elementor — pixel-perfect and easy to edit.</p>
+                    <ul class="card-features">
+                        <li>Figma to WordPress</li>
+                        <li>HTML to WordPress</li>
+                        <li>Pixel-Perfect Build</li>
+                        <li>Elementor Editing</li>
+                    </ul>
+                    <button class="card-link open-popup"> Explore Service
+                        <i class="ti ti-arrow-up-right"></i>
+                    </button>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">
+                        <img src="assets/images/services/seo.png" alt="seo">
+                    </div>
+                    <h3 class="card-title  rotate-text">WordPress Customization</h3>
+                    <p class="card-desc">WordPress website customization, speed optimization and practical improvements that keep your site fast, secure and easy to run.</p>
+                    <ul class="card-features">
+                        <li>Speed Optimization</li>
+                        <li>On-Page SEO Basics</li>
+                        <li>Security Setup</li>
+                        <li>Easy Management</li>
+                    </ul>
+                    <button class="card-link open-popup"> Explore Service
+                        <i class="ti ti-arrow-up-right"></i>
+                    </button>
+                </div>
+                <!-- SERVICE DETAILS MODAL -->
+                <div class="service-popup" id="servicePopup">
+                    <div class="popup-overlay close-popup"></div>
+                    <div class="popup-container">
+                        <div class="popup-left">
+                            <div class="popup-badge">
+                                PREMIUM DIGITAL SERVICE
+                            </div>
+                            <h2 id="popupTitle">WordPress Development</h2>
+                            <p id="popupDesc">
+                                Complete WordPress development — custom themes, Elementor builds and custom widgets, focused on speed, clean structure and easy management.
+                            </p>
+                            <div class="popup-features">
+                                <div class="feature-box">
+                                    <i class="ti ti-layout-grid"></i>
+                                    <div>
+                                        <h3>Planning</h3>
+                                        <p>Structure &amp; content planning for your website.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-box">
+                                    <i class="ti ti-palette"></i>
+                                    <div>
+                                        <h3>Modern UI</h3>
+                                        <p>Clean, modern, interactive visual systems.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-box">
+                                    <i class="ti ti-device-desktop"></i>
+                                    <div>
+                                        <h3>Responsive Design</h3>
+                                        <p>Perfectly optimized for every screen size.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-box">
+                                    <i class="ti ti-brand-figma"></i>
+                                    <div>
+                                        <h3>Figma Workflow</h3>
+                                        <p>Professional component-based design systems.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup-tech">
+                                <span>WordPress</span>
+                                <span>Elementor</span>
+                                <span>PHP</span>
+                                <span>Figma</span>
+                            </div>
+                            <div class="hero-cta-row">
+                                <a class="btn-quote" href="#contact">
+                                    <i class="ti ti-phone-outgoing"></i> Start Project
+                                </a>
+                                <a class="btn-quote btn-trasp" href="#project">
+                                    <i class="ti ti-eye"></i> View Portfolio
+                                </a>
+                            </div>
+                        </div>
+                        <div class="popup-right">
+                            <div class="popup-image-box">
+                                <video id="popupVideo" autoplay muted loop playsinline>
+                                    <source src="assets/video/video1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <button class="popup-close close-popup">
+                            <i class="ti ti-x"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================== PROJECTS  Section ========================== -->
+    <section id="projects" class="section-pad">
+        <div class="container">
+            <p class="sec-num">04</p>
+            <p class="eyebrow text-center rotate-text">Selected Work</p>
+            <h2 class="big-title text-center rotate-text">My <em>Portfolio</em></h2>
+            <p class="lead-text text-center rotate-text">A curated showcase of websites and interfaces I have designed and built for real clients.</p>
+            <!-- FILTER -->
+            <div class="work-filter">
+                <button class="active" data-filter="all">
+                    All Work
+                </button>
+                <button data-filter="design">
+                    UI Design
+                </button>
+                <button data-filter="frontend">
+                    Frontend
+                </button>
+                <button data-filter="webapp">
+                    Web App
+                </button>
+                <button data-filter="wordpress">
+                    WordPress
+                </button>
+            </div>
+            <div class="row ourwork-row">
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="wordpress">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project1.jpg" alt="Tribeca Dental">
+                        </div>
+                        <a href="#" class="work-content">
+                            <span class="work-category">WordPress</span>
+                            <h3>Tribeca Dental</h3>
+                            <div class="work-tags">
+                                <span>WordPress</span>
+                                <span>Elementor</span>
+                                <span>Dental</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- CARD -->
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="wordpress">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project2.jpg" alt="Evans Exterminator">
+                        </div>
+                        <a href="#" class="work-content">
+                            <span class="work-category">WordPress</span>
+                            <h3>Evans Exterminator</h3>
+                            <div class="work-tags">
+                                <span>WordPress</span>
+                                <span>Elementor Pro</span>
+                                <span>Business</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- CARD -->
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="webapp">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project3.jpg" alt="FleexStudio Hub">
+                        </div>
+                        <a href="#" class="work-content">
+                            <span class="work-category">Web App</span>
+                            <h3>FleexStudio Hub</h3>
+                            <div class="work-tags">
+                                <span>Web App</span>
+                                <span>Dashboard</span>
+                                <span>Agency Tool</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- CARD -->
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="wordpress">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project4.jpg" alt="RoofPro Template">
+                        </div>
+                        <a href="#" class="work-content">
+                            <span class="work-category">WordPress</span>
+                            <h3>RoofPro Template</h3>
+                            <div class="work-tags">
+                                <span>WordPress</span>
+                                <span>Template</span>
+                                <span>Business</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- CARD -->
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="design">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project5.jpg" alt="Corbin Website">
+                        </div>
+                        <a href="#" class="work-content">
+                            <span class="work-category">UI Design</span>
+                            <h3>Corbin Website</h3>
+                            <div class="work-tags">
+                                <span>Figma</span>
+                                <span>UI Design</span>
+                                <span>Website</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project6.jpg" alt="Appure">
+                        </div>
+                        <a href="https://appure.vercel.app" target="_blank" class="work-content">
+                            <span class="work-category">Frontend</span>
+                            <h3>Appure</h3>
+                            <div class="work-tags">
+                                <span>JavaScript</span>
+                                <span>Web App</span>
+                                <span>Live Project</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- ======================== RESUME Section ========================== -->
+    <section id="resume" class="section-pad">
+        <div class="container">
+            <p class="sec-num">05</p>
+            <p class="eyebrow text-center rotate-text">My Journey</p>
+            <h2 class="big-title text-center rotate-text">Resume & <em>History</em></h2>
+            <p class="lead-text text-center rotate-text">From curious student to seasoned professional.</p>
+            <div class="row rv-tabs">
+                <!-- EXPERIENCE PANEL -->
+                <div class="col-lg-6">
+                    <h2 class="rv-section-label rotate-text">experience</h2>
+                    <div class=" rv-tl">
+                        <div class="rv-item">
+                            <div class="rv-dot"></div>
+                            <div class="rv-date">2024 — PRESENT
+                                <span class="rv-current">
+                                    <span class="rv-current-dot"></span>Current</span>
+                            </div>
+                            <div class="rv-role">WordPress Developer</div>
+                            <div class="rv-company">
+                                <i class="ti ti-map-pin"></i>Fleexstudio — Kushtia, Bangladesh
+                            </div>
+                            <p class="rv-desc">Building and customizing WordPress websites for agency clients — turning Figma designs into responsive Elementor websites, developing custom Elementor widgets, and keeping every site fast and easy to manage.</p>
+                            <div class="rv-pills">
+                                <span class="rv-pill">WordPress</span>
+                                <span class="rv-pill">Elementor Pro</span>
+                                <span class="rv-pill">JavaScript</span>
+                                <span class="rv-pill">PHP</span>
+                                <span class="rv-pill">JavaScript</span>
+                                <span class="rv-pill">Responsive Design</span>
+                            </div>
+                        </div>
+                        <div class="rv-item">
+                            <div class="rv-dot"></div>
+                            <div class="rv-date">2023 — 2024</div>
+                            <div class="rv-role">Full Stack Web Developer</div>
+                            <div class="rv-company"><i class="ti ti-map-pin"></i>Freelance &amp; Personal Projects</div>
+                            <p class="rv-desc">Project-based full stack development — designing and building complete websites and web interfaces with HTML, CSS, JavaScript and PHP, deployed with GitHub and Vercel.
+                            </p>
+                            <div class="rv-pills">
+                                <span class="rv-pill">HTML5</span>
+                                <span class="rv-pill">CSS3</span>
+                                <span class="rv-pill">Figma</span>
+                                <span class="rv-pill">GitHub</span>
+                                <span class="rv-pill">Vercel</span>
+                            </div>
+                        </div>
+                        <div class="rv-item">
+                            <div class="rv-dot"></div>
+                            <div class="rv-date">2022 — 2023</div>
+                            <div class="rv-role">Web Designer &amp; Developer</div>
+                            <div class="rv-company"><i class="ti ti-map-pin"></i>Learning &amp; Practice Projects</div>
+                            <p class="rv-desc">Started the journey with practice websites and design projects — mastering HTML, CSS, JavaScript and the Figma-to-website workflow that still drives my work today.</p>
+                            <div class="rv-pills">
+                                <span class="rv-pill">HTML</span>
+                                <span class="rv-pill">CSS</span>
+                                <span class="rv-pill">Figma</span>
+                                <span class="rv-pill">WordPress</span>
+                                <span class="rv-pill">UI Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- EDUCATION PANEL -->
+                <div class="col-lg-6">
+                    <h2 class="rv-section-label  rotate-text">Expertise</h2>
+                    <div class="rv-tl">
+                        <div class="rv-item">
+                            <div class="rv-dot"></div>
+                            <div class="rv-date">CORE <span class="rv-date-badge">SPECIALIZATION</span>
+                            </div>
+                            <div class="rv-role">WordPress &amp; Elementor</div>
+                            <div class="rv-company"><i class="ti ti-school"></i>Professional Practice — Fleexstudio</div>
+                            <p class="rv-desc">Deep specialization in the WordPress ecosystem through daily agency work — theme development, Elementor Pro builds and custom widget development for real client projects.</p>
+                            <div class="rv-pills">
+                                <span class="rv-pill">Theme Development</span>
+                                <span class="rv-pill">Custom Widgets</span>
+                                <span class="rv-pill">Elementor Pro</span>
+                                <span class="rv-pill">Responsive Design</span>
+                                <span class="rv-pill">Speed</span>
+                            </div>
+                        </div>
+                        <div class="rv-item">
+                            <div class="rv-dot"></div>
+                            <div class="rv-date">FOCUS <span class="rv-date-badge">DEVELOPMENT</span> </div>
+                            <div class="rv-role">Modern Frontend Development</div>
+                            <div class="rv-company"><i class="ti ti-school"></i>Continuous Learning</div>
+                            <p class="rv-desc">Continuous, practice-driven learning in modern frontend development — semantic HTML, modern CSS, JavaScript and PHP, applied directly to client and personal projects.</p>
+                            <div class="rv-pills">
+                                <span class="rv-pill">HTML5</span>
+                                <span class="rv-pill">CSS3</span>
+                                <span class="rv-pill">JavaScript</span>
+                                <span class="rv-pill">PHP</span>
+                                <span class="rv-pill">Git</span>
+                            </div>
+                        </div>
+                        <div class="rv-item">
+                            <div class="rv-dot"></div>
+                            <div class="rv-date">WORKFLOW <span class="rv-date-badge">DESIGN-TO-CODE</span> </div>
+                            <div class="rv-role">Figma to Website Workflow</div>
+                            <div class="rv-company"><i class="ti ti-school"></i>Fleexstudio Projects</div>
+                            <p class="rv-desc">A refined design-to-code workflow: Figma files become pixel-perfect, responsive WordPress websites — with Git and Vercel keeping every deployment tracked and live.</p>
+                            <div class="rv-pills">
+                                <span class="rv-pill">Figma</span>
+                                <span class="rv-pill">Git</span>
+                                <span class="rv-pill">GitHub</span>
+                                <span class="rv-pill">Vercel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================== Testimonial Section ========================== -->
+    <section class="testimonial-section section-pad" id="testimonials">
+        <div class="container">
+            <p class="sec-num">06</p>
+            <p class="eyebrow text-center rotate-text">
+                TESTIMONIAL
+            </p>
+            <h2 class="big-title text-center mb-0  rotate-text">
+                <em>Client</em> Say
+            </h2>
+            <!-- SWIPER -->
+            <div class="swiper testimonialSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon">
+                                <img src="assets/images/svg/quote.svg" alt="quote">
+                            </div>
+                            <p class="testimonial-text">
+                                Rabby rebuilt our clinic website with WordPress and Elementor — clean design, fast loading, and easy for our own team to update. Communication was smooth from start to finish.
+                            </p>
+                            <div class="testimonial-user">
+                                <div class="testimonial-user-img">
+                                    <img src="assets/images/testimonial/client1.jpg" alt="client1">
+                                </div>
+                                <div class="testimonial-user-info">
+                                    <h3>Clinic Owner</h3>
+                                    <span>Dental Website Project</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon">
+                                <img src="assets/images/svg/quote.svg" alt="quote">
+                            </div>
+                            <p class="testimonial-text">
+                                Our service website needed a redesign that brings in more calls. The new site is responsive, professional, and the contact flow is much clearer for our customers now.
+                            </p>
+                            <div class="testimonial-user">
+                                <div class="testimonial-user-img">
+                                    <img src="assets/images/testimonial/client2.jpg" alt="client2">
+                                </div>
+                                <div class="testimonial-user-info">
+                                    <h3>Business Owner</h3>
+                                    <span>Home Services Website</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon">
+                                <img src="assets/images/svg/quote.svg" alt="quote">
+                            </div>
+                            <p class="testimonial-text">
+                                Delivered exactly what the Figma design promised — a pixel-perfect Elementor build with clean structure behind it, finished on schedule.
+                            </p>
+                            <div class="testimonial-user">
+                                <div class="testimonial-user-img">
+                                    <img src="assets/images/testimonial/client3.jpg" alt="client3">
+                                </div>
+                                <div class="testimonial-user-info">
+                                    <h3>Agency Partner</h3>
+                                    <span>Figma to WordPress Project</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================== PRICING Section ========================== -->
+    <section class="pricing-section section-pad" id="pricing">
+        <div class="container">
+            <p class="sec-num">07</p>
+            <p class="eyebrow text-center rotate-text">PRICING PLAN</p>
+            <h2 class="big-title text-center rotate-text">
+                Simple <em>Pricing</em>
+            </h2>
+            <p class="lead-text text-center rotate-text">
+                Flexible packages crafted for startups, personal brands & growing businesses.
+            </p>
+            
+            <div class="row pricing-row">
+                <div class="col-xl-4 col-md-6">
+                    <div class="pricing-card">
+                        <div>
+                            <div class="pricing-top">
+                                <span class="pricing-label">Starter</span>
+                                <h2> $49 <span>/project</span></h2>
+                                <p> Perfect for small businesses & personal portfolios.</p>
+                            </div>
+                            <ul class="pricing-list">
+                                <li>
+                                    <i class="ti ti-circle-check"></i>
+                                    1 Page Website
+                                </li>
+                                <li>
+                                    <i class="ti ti-circle-check"></i>
+                                    Mobile Responsive
+                                </li>
+                                <li>
+                                    <i class="ti ti-circle-check"></i>
+                                    Basic SEO Setup
+                                </li>
+                                <li>
+                                    <i class="ti ti-circle-check"></i>
+                                    Contact Form
+                                </li>
+                                <li>
+                                    <i class="ti ti-circle-check"></i>
+                                    Modern UI/UX Design
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn-quote pricing-btn">
+                            <i class="ti ti-arrow-up-right"></i>Get Started
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="pricing-card active-price">
+                        <div>
+                            <div class="popular-tag"> MOST POPULAR </div>
+                            <div class="pricing-top"> <span class="pricing-label"> Professional</span>
+                                <h2> $149 <span>/project</span></h2>
+                                <p>Best choice for brands needing premium UI/UX.</p>
+                            </div>
+                            <ul class="pricing-list">
+                                <li>
+                                    <i class="ti ti-circle-check"></i>
+                                    Multi Page Website
+                                </li>
+                                <li>
+                                    <i class="ti ti-circle-check"></i>
+                                    WordPress + Elementor Pro
+                                </li>
+                                <li>
+                                    <i class="ti ti-circle-check"></i>
+                                    Advanced SEO
+                                </li>
+                                <li>
+                                    <i class="ti ti-circle-check"></i>
+                                    Custom Elementor Widgets
+                                </li>
+                                <li>
+                                    <i class="ti ti-circle-check"></i>
+                                    Speed Optimization
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn-quote btn-trasp pricing-btn-active">
+                            <i class="ti ti-arrow-up-right"></i>Get Started
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="pricing-card">
+                        <div>
+                            <div class="pricing-top">
+                                <span class="pricing-label rotate-text"> Enterprise </span>
+                                <h2> $299 <span> /project</span></h2>
+                                <p>High-end solutions for modern businesses.</p>
+                            </div>
+                            <ul class="pricing-list">
+                                <li>
+                                    <i class="ti ti-circle-check"></i>
+                                    Business Website + Blog
+                                </li>
+                                <li>
+                                    <i class="ti ti-circle-check"></i>
+                                    WooCommerce Ready
+                                </li>
+                                <li>
+                                    <i class="ti ti-circle-check"></i>
+                                    Third-party Integrations
+                                </li>
+                                <li>
+                                    <i class="ti ti-circle-check"></i>
+                                    Premium Support
+                                </li>
+                                <li>
+                                    <i class="ti ti-circle-check"></i>
+                                    Unlimited Revisions
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn-quote pricing-btn">
+                            <i class="ti ti-arrow-up-right"></i>Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================== Blog Section ========================== -->
+    <section class="blog-section section-pad" id="blog">
+        <div class="container">
+            <p class="sec-num">08</p>
+            <p class="eyebrow text-center rotate-text">LATEST BLOG</p>
+            <h2 class="big-title text-center rotate-text mb-0">
+                Latest <em>Insights</em>
+            </h2>
+            <div class="row blog-row">
+                <div class="col-xl-4 col-md-6">
+                    <div class="blog-card">
+                        <span class="blog-date"><i class="ti ti-calendar"></i>Aug 15, 2026</span>
+                        <div class="blog-img">
+                            <img src="assets/images/blog/blogImg1.jpg" alt="blog1">
+                        </div>
+                        <div class="blog-content">
+                            <div>
+                                <h3>Why Clean UI Design Builds Better User Trust</h3>
+                                <p> Discover the latest interface trends, motion effects and modern web experiences
+                                    dominating 2026.</p>
+                            </div>
+                            <a href="#" class="blog-btn readMoreBtn">
+                                Read More
+                                <i class="ti ti-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- BLOG CARD -->
+                <div class="col-xl-4 col-md-6">
+                    <div class="blog-card">
+                        <span class="blog-date"><i class="ti ti-calendar"></i>Aug 18, 2026</span>
+                        <div class="blog-img">
+                            <img src="assets/images/blog/blogImg2.jpg" alt="blog2">
+                        </div>
+                        <div class="blog-content">
+                            <div>
+                                <h3>How Fast Websites Improve SEO Rankings</h3>
+                                <p>Boost your SEO speed with optimization techniques used in modern production projects.
+                                </p>
+                            </div>
+                            <a href="#" class="blog-btn readMoreBtn">
+                                Read More
+                                <i class="ti ti-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- BLOG CARD -->
+                <div class="col-xl-4 col-md-6">
+                    <div class="blog-card">
+                        <span class="blog-date"><i class="ti ti-calendar"></i>Aug 20, 2026</span>
+                        <div class="blog-img">
+                            <img src="assets/images/blog/blogImg3.jpg" alt="blog3">
+                        </div>
+                        <div class="blog-content">
+                            <div>
+                                <h3>Elementor Performance Tips for Faster WordPress Sites</h3>
+                                <p>Boost your WordPress site speed with optimization techniques used in real production projects.
+                                </p>
+                            </div>
+                            <a href="#" class="blog-btn readMoreBtn">
+                                Read More
+                                <i class="ti ti-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BLOG POPUP -->
+    <div class="blog-popup">
+        <div class="blog-popup-overlay"></div>
+        <div class="blog-popup-box">
+            <button class="blog-close">
+                <i class="ti ti-x"></i>
+            </button>
+            <div class="blog-popup-img">
+                <img src="assets/images/blog/blogImg1.jpg" alt="blog">
+                <span class="popup-category">
+                    UI/UX DESIGN
+                </span>
+            </div>
+            <div class="blog-popup-content">
+                <div class="popup-meta">
+                    <span>
+                        <i class="ti ti-calendar"></i>
+                        Aug 20, 2026
+                    </span>
+                    <span>
+                        <i class="ti ti-clock"></i>
+                        5 Min Read
+                    </span>
+                    <span>
+                        <i class="ti ti-eye"></i>
+                        2.5K Views
+                    </span>
+                </div>
+                <h2>Why Clean UI Design Builds Better User Trust</h2>
+                <div class="popup-author">
+                    <div class="popup-author-img">
+                        <img src="assets/images/home/profile-img.jpg" alt="author">
+                    </div>
+                    <div class="popup-author-info">
+                        <h3>Abdul Rabby</h3>
+                        <span>WordPress Developer</span>
+                    </div>
+                </div>
+                <p>
+                    A clean, well-organized website tells visitors they can trust the business behind it. Clear layouts, readable typography and fast loading pages make people stay longer — and turn visitors into customers.
+                </p>
+                <p>
+                    For service businesses — clinics, home services, local brands — trust is everything. When a website looks professional and works perfectly on mobile, customers call with confidence instead of hesitation.
+                </p>
+                <div class="blogquot-main">
+                    <blockquote>
+                        “Good motion design is invisible — users feel it
+                        before they notice it.”
+                    </blockquote>
+                </div>
+                <p>
+                    Good design is not decoration. It is structure, speed and clarity working together — and it is the standard I build every WordPress website to.
+                </p>
+                <div class="popup-tags">
+                    <span>#UIUX</span>
+                    <span>#WordPress</span>
+                    <span>#Elementor</span>
+                    <span>#Performance</span>
+                </div>
+                <div class="popup-share">
+                    <h3>Share Article :</h3>
+                    <div class="popup-social">
+                        <a href="https://github.com/mdabdulrabby56" target="_blank">
+                            <img src="assets/images/svg/github.svg" alt="github">
+                        </a>
+                        <a href="https://www.behance.net/mdabdulrabby" target="_blank">
+                            <img src="assets/images/svg/behance.svg" alt="behance">
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <img src="assets/images/svg/LinkedIn.svg" alt="linkedin">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
-
-  <!-- 03 SERVICES -->
-  <section class="section" id="services">
-    <div class="container">
-      <div class="sec-head reveal">
-        <span class="sec-num">03</span>
-        <div>
-          <p class="sec-label">What I Offer</p>
-          <h2 class="sec-title">My <em>Services</em></h2>
+    <!-- ============ CONTACT ============ -->
+    <section class="contact-section section-pad" id="contact">
+        <div class="container">
+            <div class="sec-num">09</div>
+            <p class="eyebrow text-center rotate-text">
+                CONTACT ME
+            </p>
+            <h2 class="big-title text-center buidlmain rotate-text">
+                Let's Build Something <em>Amazing</em>
+            </h2>
+            <p class="lead-text text-center rotate-text">
+                Have a project in mind or want to collaborate? Let's create modern digital experiences together.
+            </p>
+            <div class="row align-items-stretch contact-row">
+                <div class="col-lg-7">
+                    <div class="contact-form-main">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="contact-input">
+                                        <span class="input-icon">
+                                            <i class="ti ti-user"></i>
+                                        </span>
+                                        <input type="text" placeholder="Your Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="contact-input">
+                                        <span class="input-icon">
+                                            <i class="ti ti-mail"></i>
+                                        </span>
+                                        <input type="email" placeholder="Email Address">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="contact-input">
+                                        <span class="input-icon">
+                                            <i class="ti ti-phone"></i>
+                                        </span>
+                                        <input type="text" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="contact-input">
+                                        <span class="input-icon">
+                                            <i class="ti ti-briefcase"></i>
+                                        </span>
+                                        <input type="text" placeholder="Project Type">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="contact-input">
+                                        <textarea placeholder="Tell me about your project"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn-quote pricing-btn">
+                                        <i class="ti ti-arrow-up-right"></i> Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="contact-info-main">
+                        <div class="contact-info-card">
+                            <div class="contact-icon">
+                                <i class="ti ti-mail"></i>
+                            </div>
+                            <div>
+                                <span>Email Address</span>
+                                <a href="mailto:rabby.fleexstudio@gmail.com">
+                                    rabby.fleexstudio@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-icon">
+                                <i class="ti ti-world"></i>
+                            </div>
+                            <div>
+                                <span>Agency Website</span>
+                                <a href="https://fleexstudio.com/" target="_blank">
+                                    fleexstudio.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-icon">
+                                <i class="ti ti-map-pin"></i>
+                            </div>
+                            <div>
+                                <span>Location</span>
+                                <p>Kushtia, Bangladesh</p>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                        <a href="https://github.com/mdabdulrabby56" target="_blank">
+                            <img src="assets/images/svg/github.svg" alt="github">
+                        </a>
+                        <a href="https://www.behance.net/mdabdulrabby" target="_blank">
+                            <img src="assets/images/svg/behance.svg" alt="behance">
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <img src="assets/images/svg/LinkedIn.svg" alt="linkedin">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <p class="sec-sub reveal">End-to-end WordPress and web development services, built with precision and care.</p>
-      <div class="cards">
-        <article class="card reveal">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1"/><path d="M5 16h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1"/><path d="M15 12h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1"/><path d="M15 4h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1"/></svg></div>
-          <h3>WordPress Theme Development</h3>
-          <p>Custom WordPress themes built from scratch — clean code, fast loading, easy to manage.</p>
-          <ul><li>Custom theme setup</li><li>Clean, maintainable code</li><li>Performance focused</li></ul>
-        </article>
-        <article class="card reveal">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h3a1 1 0 0 0 1 -1v-1a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h1a2 2 0 0 1 0 4h-1a1 1 0 0 0 -1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-1a2 2 0 0 0 -4 0v1a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h1a2 2 0 0 0 0 -4h-1a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1"/></svg></div>
-          <h3>Custom Elementor Widgets</h3>
-          <p>Bespoke Elementor widgets built with PHP, HTML, CSS, and JavaScript when the standard toolbox isn't enough.</p>
-          <ul><li>Widget development</li><li>Custom controls &amp; styling</li><li>Elementor Pro integration</li></ul>
-        </article>
-        <article class="card reveal">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 21l15 -15l-3 -3l-15 15l3 3"/><path d="M15 6l3 3"/><path d="M9 3a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"/><path d="M19 13a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"/></svg></div>
-          <h3>Elementor Customization</h3>
-          <p>Pixel-accurate Elementor builds from Figma designs, with careful responsive detailing.</p>
-          <ul><li>Figma to Elementor</li><li>Pixel-perfect layout</li><li>Responsive refinement</li></ul>
-        </article>
-        <article class="card reveal">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 9a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1v-10"/><path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9"/><path d="M16 9h2"/></svg></div>
-          <h3>Responsive Web Development</h3>
-          <p>Modern websites that look and work great on desktop, tablet, and mobile — no broken layouts.</p>
-          <ul><li>Mobile-first builds</li><li>Cross-device testing</li><li>Modern UI/UX</li></ul>
-        </article>
-        <article class="card reveal">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 8l-4 4l4 4"/><path d="M17 8l4 4l-4 4"/><path d="M14 4l-4 16"/></svg></div>
-          <h3>HTML to WordPress</h3>
-          <p>Turn static HTML pages or designs into fully editable, dynamic WordPress websites.</p>
-          <ul><li>Full conversion</li><li>Editable content areas</li><li>Same design, dynamic site</li></ul>
-        </article>
-        <article class="card reveal">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065"/><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/></svg></div>
-          <h3>WordPress Customization</h3>
-          <p>Feature additions, layout changes, and refinements for existing WordPress websites.</p>
-          <ul><li>Feature additions</li><li>Layout changes</li><li>Site improvements</li></ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- 04 WORK -->
-  <section class="section alt" id="work">
-    <div class="container">
-      <div class="sec-head reveal">
-        <span class="sec-num">04</span>
-        <div>
-          <p class="sec-label">Selected Work</p>
-          <h2 class="sec-title">Featured <em>Projects</em></h2>
+    </section>
+    <!-- ======================== FOOTER Section ========================== -->
+    <footer class="onepage-footer">
+        <div class="footer-marquee">
+            <h2>
+                LET'S CREATE SOMETHING AMAZING —
+            </h2>
         </div>
-      </div>
-      <p class="sec-sub reveal">A showcase of recent websites and projects I've designed and built.</p>
-      <div class="cards projects">
-        <article class="card project reveal">
-          <div class="thumb thumb-1"><span>Tribeca Dental</span></div>
-          <p class="project-cat">WordPress • Dental Clinic</p>
-          <h3>Tribeca Dental</h3>
-          <p>A modern website for a dental practice, designed for clear service presentation and easy appointment enquiries.</p>
-          <a class="btn btn-small btn-outline" href="#">Live Preview</a>
-        </article>
-        <article class="card project reveal">
-          <div class="thumb thumb-2"><span>Evans Exterminator</span></div>
-          <p class="project-cat">WordPress • Service Company</p>
-          <h3>Evans Exterminator</h3>
-          <p>Service-focused website for a pest control company, built around fast contact paths and local service pages.</p>
-          <a class="btn btn-small btn-outline" href="#">Live Preview</a>
-        </article>
-        <article class="card project reveal">
-          <div class="thumb thumb-3"><span>FleexStudio Hub</span></div>
-          <p class="project-cat">Web Development • Agency</p>
-          <h3>FleexStudio Hub</h3>
-          <p>Internal hub project for Fleexstudio, supporting the agency's design and development workflow.</p>
-          <a class="btn btn-small btn-outline" href="#">Live Preview</a>
-        </article>
-        <article class="card project reveal">
-          <div class="thumb thumb-4"><span>RoofPro</span></div>
-          <p class="project-cat">WordPress • Roofing Template</p>
-          <h3>RoofPro — Roofing Template</h3>
-          <p>A roofing company website template with strong calls to action and a layout built for lead generation.</p>
-          <a class="btn btn-small btn-outline" href="#">Live Preview</a>
-        </article>
-        <article class="card project reveal">
-          <div class="thumb thumb-5"><span>Corbin Website</span></div>
-          <p class="project-cat">Design to WordPress</p>
-          <h3>Corbin Website Design</h3>
-          <p>Design-to-website build with a clean layout, careful typography, and fully responsive pages.</p>
-          <a class="btn btn-small btn-outline" href="#">Live Preview</a>
-        </article>
-        <article class="card project reveal">
-          <div class="thumb thumb-6"><span>Appure</span></div>
-          <p class="project-cat">Web App • Vercel</p>
-          <h3>Appure</h3>
-          <p>A web project developed with modern tooling and deployed on Vercel through a GitHub workflow.</p>
-          <a class="btn btn-small btn-outline" href="https://appure.vercel.app" target="_blank" rel="noopener">Live Preview</a>
-        </article>
-      </div>
-      <p class="note reveal">More live project links are being added — placeholders above can be replaced with real URLs at any time.</p>
-    </div>
-  </section>
-
-  <!-- 05 RESUME -->
-  <section class="section" id="resume">
-    <div class="container">
-      <div class="sec-head reveal">
-        <span class="sec-num">05</span>
-        <div>
-          <p class="sec-label">My Journey</p>
-          <h2 class="sec-title">Resume &amp; <em>History</em></h2>
+        <div class="container">
+            <div class="footer-flex">
+                <div class="footer-left">
+                    <a href="#" class="footer-logo">
+                        AB.RABBY
+                    </a>
+                    <p>
+                        WordPress &amp; Web Developer crafting modern websites with Elementor, clean code and premium design.
+                    </p>
+                </div>
+                <!-- CENTER -->
+                <div class="footer-center">
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <a href="mailto:rabby.fleexstudio@gmail.com" class="footer-mail">
+                        rabby.fleexstudio@gmail.com
+                    </a>
+                    <div class="footer-social">
+                        <a href="https://github.com/mdabdulrabby56" target="_blank">
+                            <img src="assets/images/svg/github.svg" alt="github">
+                        </a>
+                        <a href="https://www.behance.net/mdabdulrabby" target="_blank">
+                            <img src="assets/images/svg/behance.svg" alt="behance">
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <img src="assets/images/svg/LinkedIn.svg" alt="linkedin">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- BOTTOM -->
+            <div class="footer-bottom">
+                <p>© 2026 <a href="#">ABDUL RABBY</a> — All Rights Reserved</p>
+            </div>
         </div>
-      </div>
-      <h3 class="timeline-title reveal">Experience</h3>
-      <div class="timeline">
-        <article class="job reveal">
-          <p class="job-period">Current</p>
-          <h3>WordPress Developer</h3>
-          <p class="job-org">Fleexstudio — UI/UX &amp; Web Design Agency, Kushtia</p>
-          <p>Building and customizing WordPress websites for international clients as part of the Fleexstudio team — dental, healthcare, home-service, and business websites. Elementor and Elementor Pro builds from Figma designs, custom Elementor widget development, theme customization, and responsive refinement across devices.</p>
-          <ul class="chips"><li>WordPress</li><li>Elementor Pro</li><li>PHP</li><li>Figma</li><li>JavaScript</li></ul>
-        </article>
-        <article class="job reveal">
-          <p class="job-period">Ongoing</p>
-          <h3>Full Stack Web Developer</h3>
-          <p class="job-org">Project-based development</p>
-          <p>Developing modern websites and web applications with HTML, CSS, JavaScript, and PHP — including GitHub-based workflows and deployments on Vercel, alongside WordPress projects.</p>
-          <ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>GitHub</li><li>Vercel</li></ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- 06 CONTACT -->
-  <section class="section alt" id="contact">
-    <div class="container">
-      <div class="sec-head reveal">
-        <span class="sec-num">06</span>
-        <div>
-          <p class="sec-label">Contact Me</p>
-          <h2 class="sec-title">Let's Build Something <em>Amazing</em></h2>
-        </div>
-      </div>
-      <p class="sec-sub reveal">Have a project in mind or want to collaborate? Let's create modern digital experiences together.</p>
-      <div class="contact-grid">
-        <div class="reveal">
-          <ul class="contact-cards">
-            <li><span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10"/><path d="M3 7l9 6l9 -6"/></svg></span><div><strong>Email Address</strong><a href="mailto:rabby.fleexstudio@gmail.com">rabby.fleexstudio@gmail.com</a></div></li>
-            <li><span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M3.6 9h16.8"/><path d="M3.6 15h16.8"/><path d="M11.5 3a17 17 0 0 0 0 18"/><path d="M12.5 3a17 17 0 0 1 0 18"/></svg></span><div><strong>Agency Website</strong><a href="https://fleexstudio.com" target="_blank" rel="noopener">fleexstudio.com</a></div></li>
-            <li><span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0"/></svg></span><div><strong>Location</strong>Kushtia, Bangladesh</div></li>
-          </ul>
-          <div class="socials">
-            <a href="https://github.com/mdabdulrabby56" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a>
-            <a href="https://www.behance.net/mdabdulrabby" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.969 16.927a2.561 2.561 0 0 0 1.901.677 2.501 2.501 0 0 0 1.531-.475c.362-.235.636-.584.779-.99h2.585a5.091 5.091 0 0 1-1.9 2.896 5.292 5.292 0 0 1-3.091.88 5.839 5.839 0 0 1-2.284-.433 4.871 4.871 0 0 1-1.723-1.211 5.657 5.657 0 0 1-1.08-1.874 7.057 7.057 0 0 1-.383-2.393c-.005-.8.129-1.595.396-2.349a5.313 5.313 0 0 1 5.088-3.604 4.87 4.87 0 0 1 2.376.563c.661.362 1.231.87 1.668 1.485a6.2 6.2 0 0 1 .943 2.133c.194.821.263 1.666.205 2.508h-7.699c-.063.79.184 1.574.688 2.187ZM6.947 4.084a8.065 8.065 0 0 1 1.928.198 4.29 4.29 0 0 1 1.49.638c.418.303.748.711.958 1.182.241.579.357 1.203.341 1.83a3.506 3.506 0 0 1-.506 1.961 3.726 3.726 0 0 1-1.503 1.287 3.588 3.588 0 0 1 2.027 1.437c.464.747.697 1.615.67 2.494a4.593 4.593 0 0 1-.423 2.032 3.945 3.945 0 0 1-1.163 1.413 5.114 5.114 0 0 1-1.683.807 7.135 7.135 0 0 1-1.928.259H0V4.084h6.947Zm-.235 12.9c.308.004.616-.029.916-.099a2.18 2.18 0 0 0 .766-.332c.228-.158.411-.371.534-.619.142-.317.208-.663.191-1.009a2.08 2.08 0 0 0-.642-1.715 2.618 2.618 0 0 0-1.696-.505h-3.54v4.279h3.471Zm13.635-5.967a2.13 2.13 0 0 0-1.654-.619 2.336 2.336 0 0 0-1.163.259 2.474 2.474 0 0 0-.738.62 2.359 2.359 0 0 0-.396.792c-.074.239-.12.485-.137.734h4.769a3.239 3.239 0 0 0-.679-1.785l-.002-.001Zm-13.813-.648a2.254 2.254 0 0 0 1.423-.433c.399-.355.607-.88.56-1.413a1.916 1.916 0 0 0-.178-.891 1.298 1.298 0 0 0-.495-.533 1.851 1.851 0 0 0-.711-.274 3.966 3.966 0 0 0-.835-.073H3.241v3.631h3.293v-.014ZM21.62 5.122h-5.976v1.527h5.976V5.122Z"/></svg>Behance</a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
-          </div>
-        </div>
-        <form class="contact-form reveal" id="contactForm">
-          <label for="name">Your Name</label>
-          <input id="name" name="name" type="text" placeholder="John Smith" required />
-          <label for="email">Your Email</label>
-          <input id="email" name="email" type="email" placeholder="john@example.com" required />
-          <label for="message">Project Details</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
-          <button type="submit" class="btn btn-lime">Send Message</button>
-          <p class="form-note" id="formNote"></p>
-        </form>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container footer-inner">
-    <p>© <span id="year"></span> Abdul Rabby — Web Developer &amp; WordPress Developer</p>
-    <a href="#top">Back to top ↑</a>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+    </footer>
+    <a href="#hero" class="scroll-top">
+        <span class="scroll-progress"></span>
+        <i class="ti ti-arrow-up"></i>
+    </a>
+    <script src="assets/javascript/jquery.js"></script>
+    <script src="assets/javascript/fontawesome.js"></script>
+    <script src="assets/javascript/gsap.js"></script>
+    <script src="assets/javascript/smooth-scroll.js"></script>
+    <script src="assets/javascript/swiper-bundle.min.js"></script>
+    <script src="assets/javascript/bootstrap.min.js"></script>
+    <script src="assets/javascript/split-text.js"></script>
+    <script src="assets/javascript/ScrollTrigger.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
 </body>
+
+
+
 </html>
