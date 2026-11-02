@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementor Performance Tips for Faster WordPress Sites — Abdul Rabby</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/home/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&amp;family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-query.css">
+    <style>
+        body{background:#0b0b10}
+        .blog-topbar{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:16px 22px;background:rgba(11,11,16,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
+        .blog-topbar .tb-logo{font-family:'Big Shoulders',sans-serif;font-size:26px;font-weight:900;letter-spacing:2px;color:#d4ff00;text-decoration:none}
+        .blog-topbar .tb-right{display:flex;align-items:center;gap:14px}
+        .tb-back{color:#e9e9e9;font-family:'Outfit',sans-serif;font-size:13px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none}
+        .tb-back:hover{color:#d4ff00}
+        .tb-cta{background:#d4ff00;color:#0b0b0f;font-family:'Outfit',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none;padding:10px 20px;border-radius:999px;white-space:nowrap}
+        @media (max-width:640px){.tb-cta{display:none}}
+        .article-wrap{max-width:860px;margin:0 auto;padding:130px 20px 70px}
+        .article-cat{display:inline-block;background:rgba(212,255,0,.12);color:#d4ff00;font-family:'Outfit',sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:7px 14px;border-radius:999px;margin-bottom:22px}
+        .article-title{font-family:'Big Shoulders',sans-serif;font-size:clamp(42px,7vw,64px);font-weight:900;line-height:1.05;color:#fff;text-transform:uppercase;margin-bottom:24px}
+        .article-meta{display:flex;flex-wrap:wrap;gap:22px;align-items:center;color:#9a9aad;font-family:'Outfit',sans-serif;font-size:15px;margin-bottom:26px}
+        .article-meta i{color:#d4ff00;margin-right:6px}
+        .article-author{display:flex;align-items:center;gap:14px;margin-bottom:34px}
+        .article-author img{width:52px;height:52px;border-radius:50%;object-fit:cover}
+        .article-author h3{color:#fff;font-size:17px;margin:0}
+        .article-author span{color:#9a9aad;font-size:14px}
+        .article-img{width:100%;border-radius:16px;margin-bottom:38px}
+        .article-body p{color:#c9c9d4;font-family:'Outfit',sans-serif;font-size:18px;line-height:1.85;margin-bottom:24px}
+        .article-body h2{color:#fff;font-family:'Big Shoulders',sans-serif;font-size:32px;font-weight:800;text-transform:uppercase;margin:38px 0 16px}
+        .article-quote{border-left:4px solid #d4ff00;background:rgba(212,255,0,.05);padding:22px 26px;border-radius:0 12px 12px 0;margin:32px 0}
+        .article-quote blockquote{color:#fff;font-family:'Outfit',sans-serif;font-size:20px;font-style:italic;line-height:1.6;margin:0}
+        .article-tags{display:flex;flex-wrap:wrap;gap:10px;margin:36px 0 10px}
+        .article-tags span{border:1px solid rgba(212,255,0,.35);color:#d4ff00;font-family:'Outfit',sans-serif;font-size:13px;padding:6px 13px;border-radius:999px}
+        .article-nav{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:46px;border-top:1px solid rgba(255,255,255,.09);padding-top:30px}
+        .article-nav a{color:#fff;font-family:'Outfit',sans-serif;font-size:15px;font-weight:600;text-decoration:none}
+        .article-nav a:hover{color:#d4ff00}
+        .article-nav .nav-label{display:block;color:#9a9aad;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;font-weight:400}
+    </style>
+</head>
+<body>
+    <div class="blog-topbar">
+        <a class="tb-logo" href="index.html">AB.RABBY</a>
+        <div class="tb-right">
+            <a class="tb-back" href="index.html#blog"><i class="ti ti-arrow-left"></i> All Articles</a>
+            <a class="tb-cta" href="index.html#contact">Contact Me</a>
+        </div>
+    </div>
+    <main class="article-wrap">
+        <span class="article-cat">WordPress</span>
+        <h1 class="article-title">Elementor Performance Tips for Faster WordPress Sites</h1>
+        <div class="article-meta">
+            <span><i class="ti ti-calendar"></i>Aug 20, 2026</span>
+            <span><i class="ti ti-clock"></i>5 Min Read</span>
+            <span><i class="ti ti-user"></i>Abdul Rabby</span>
+        </div>
+        <div class="article-author">
+            <img src="assets/images/home/profile-img.jpg" alt="Abdul Rabby">
+            <div>
+                <h3>Abdul Rabby</h3>
+                <span>WordPress Developer at Fleexstudio</span>
+            </div>
+        </div>
+        <img class="article-img" src="assets/images/blog/blogImg3.jpg" alt="Elementor Performance Tips for Faster WordPress Sites">
+        <div class="article-body">
+            <p>Elementor gets blamed for slow websites, but in my experience the builder is rarely the real problem. Most slow Elementor sites are slow because of how they are built — not what they are built with. These are the practices I use on client projects to keep Elementor sites fast.</p>
+            <h2>Keep the Layout Simple</h2>
+            <p>Every extra section, column and nested widget adds code to the page. Build with the fewest containers that achieve the design, avoid stacking multiple add-on packs, and remove widgets and features you are not using.</p>
+            <h2>Optimise Images Before You Upload</h2>
+            <p>Large images are the number one cause of slow Elementor pages. Resize images to the size they will actually display at, compress them, and use modern formats. A page should never load a 4000px photo into an 800px box.</p>
+            <div class="article-quote"><blockquote>&ldquo;Elementor is not slow — heavy pages are. Build light, and the builder flies.&rdquo;</blockquote></div>
+            <h2>Use Caching and a Clean Setup</h2>
+            <p>A good caching plugin, an up-to-date WordPress and PHP version, and decent hosting do more for speed than any single tweak. Combined with Elementor's own performance settings, they keep pages loading in a blink.</p>
+            <p>Faster pages mean happier visitors, better first impressions and more enquiries. That is why every Elementor website I deliver is checked for speed before it goes live.</p>
+        </div>
+        <div class="article-tags"><span>#Elementor</span><span>#WordPress</span><span>#Performance</span><span>#Speed</span></div>
+        <nav class="article-nav">
+            <div><a href="blog-fast-websites-seo-rankings.html"><span class="nav-label">Previous Article</span>How Fast Websites Improve SEO Rankings</a></div>
+            <div style="text-align:right"></div>
+        </nav>
+    </main>
+    <footer class="onepage-footer">
+        <div class="container">
+            <div class="footer-flex">
+                <div class="footer-left">
+                    <a href="index.html" class="footer-logo">AB.RABBY</a>
+                    <p>WordPress &amp; Web Developer crafting modern websites with Elementor, clean code and premium design.</p>
+                </div>
+                <div class="footer-center">
+                    <ul>
+                        <li><a href="index.html#hero">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#projects">Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <a href="mailto:rabby.fleexstudio@gmail.com" class="footer-mail">rabby.fleexstudio@gmail.com</a>
+                    <div class="footer-social">
+                        <a href="https://github.com/mdabdulrabby56" target="_blank"><img src="assets/images/svg/github.svg" alt="github" width="22" height="22"></a>
+                        <a href="https://www.behance.net/mdabdulrabby" target="_blank"><img src="assets/images/svg/behance.svg" alt="behance" width="22" height="22"></a>
+                        <a href="https://www.linkedin.com/in/md-abdul-rabby-developer-106753320/" target="_blank"><img src="assets/images/svg/LinkedIn.svg" alt="linkedin" width="22" height="22"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 <a href="index.html">ABDUL RABBY</a> — All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
