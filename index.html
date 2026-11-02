@@ -27,7 +27,10 @@
         .header-menu a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:#d4ff00;transition:width .3s ease}
         .header-menu a:hover{color:#d4ff00}
         .header-menu a:hover::after{width:100%}
+        .header-cta{background:#d4ff00;color:#0b0b0f;font-family:'Outfit',sans-serif;font-size:14px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none;padding:12px 24px;border-radius:999px;transition:background .3s ease,color .3s ease}
+        .header-cta:hover{background:#ffffff;color:#0b0b0f}
         @media (max-width:1100px){.header-menu{display:none}}
+        @media (max-width:640px){.header-cta{display:none}}
     </style>
 </head>
 
@@ -59,8 +62,9 @@
             <a href="#blog">Blog</a>
             <a href="#contact">Contact</a>
         </nav>
+        <a href="#contact" class="header-cta">Contact Me</a>
         <button class="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
+            <i class="ti ti-menu-2"></i>
         </button>
     </header>
     <div class="side-menu">
