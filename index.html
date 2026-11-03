@@ -97,6 +97,7 @@
             .footer-mail{font-size:20px!important;overflow-wrap:anywhere}
         }
             .work-desc{font-size:13.5px;line-height:1.55;color:#a7a7bd;margin:10px 0 16px}
+.cap-hide{display:none!important}
     
 /* Layout fixes 2026-11-03: uniform project grid + proper View All button */
 .ourwork-row{align-items:stretch!important}
@@ -1402,6 +1403,29 @@
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
+<script>
+(function(){
+  var LIMITS = { all: 9, frontend: 6, wordpress: 6, design: 99, webapp: 99 };
+  function applyLimit(f){
+    var lim = LIMITS[f]; if (lim === undefined) lim = 99;
+    var n = 0;
+    document.querySelectorAll('.ourwork-row .project-col').forEach(function(c){
+      c.classList.remove('cap-hide');
+      if (!c.classList.contains('hide-project')) {
+        n++;
+        if (n > lim) c.classList.add('cap-hide');
+      }
+    });
+  }
+  document.querySelectorAll('.work-filter button').forEach(function(b){
+    b.addEventListener('click', function(){
+      var f = b.getAttribute('data-filter');
+      setTimeout(function(){ applyLimit(f); }, 40);
+    });
+  });
+  applyLimit('all');
+})();
+</script>
 </body>
 
 
