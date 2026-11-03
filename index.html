@@ -97,7 +97,17 @@
             .footer-mail{font-size:20px!important;overflow-wrap:anywhere}
         }
             .work-desc{font-size:13.5px;line-height:1.55;color:#a7a7bd;margin:10px 0 16px}
-    </style>
+    
+/* Layout fixes 2026-11-03: uniform project grid + proper View All button */
+.ourwork-row{align-items:stretch!important}
+.work-card{height:100%!important}
+.work-thumb{aspect-ratio:900/650;flex:0 0 auto}
+.work-thumb img{display:block}
+.project-col{opacity:1!important;transform:none!important}
+.view-all-wrap{text-align:center;margin-top:44px}
+.view-all-btn{display:inline-block;background:#d4ff00;color:#101016;font-family:var(--font-outfit);font-weight:700;font-size:17px;letter-spacing:.4px;padding:16px 44px;border-radius:60px;text-decoration:none;transition:.3s}
+.view-all-btn:hover{background:#fff;color:#101016}
+</style>
 </head>
 
 <body>
@@ -533,24 +543,6 @@
             <p class="eyebrow text-center rotate-text">Selected Work</p>
             <h2 class="big-title text-center rotate-text">My <em>Portfolio</em></h2>
             <p class="lead-text text-center rotate-text">A curated showcase of websites and interfaces I have designed and built for real clients.</p>
-            <!-- FILTER -->
-            <div class="work-filter">
-                <button class="active" data-filter="all">
-                    All Work
-                </button>
-                <button data-filter="design">
-                    UI Design
-                </button>
-                <button data-filter="frontend">
-                    Frontend
-                </button>
-                <button data-filter="webapp">
-                    Web App
-                </button>
-                <button data-filter="wordpress">
-                    WordPress
-                </button>
-            </div>
             <div class="row ourwork-row">
                 <div class="col-xl-4 col-md-6 d-flex project-col">
                     <div class="work-card" data-category="wordpress">
@@ -660,8 +652,8 @@
                 </div>
 
             </div>
-            <div class="text-center" style="margin-top:44px">
-                <a class="btn-quote" href="projects.html">View All Projects <i class="ti ti-arrow-right"></i></a>
+            <div class="view-all-wrap">
+                <a class="view-all-btn" href="projects.html">View All Projects <i class="ti ti-arrow-right"></i></a>
             </div>
                 
         </div>
