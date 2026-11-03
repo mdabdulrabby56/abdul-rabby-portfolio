@@ -101,6 +101,15 @@
 .contact-input select{width:100%;height:60px;border:1px solid transparent;outline:none;background-color:rgba(255,255,255,0.04);color:#bdbdbd;padding:12px 45px;appearance:none;-webkit-appearance:none;cursor:pointer;transition:0.4s ease;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23d4ff00' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 18px center}
 .contact-input select:focus{border-color:#d4ff00}
 .contact-input select option{background-color:#14141d;color:#fff}
+.thanks-overlay{position:fixed;inset:0;background:rgba(5,5,10,0.72);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px}
+.thanks-overlay.show{display:flex}
+.thanks-card{background:#14141d;border:1px solid rgba(212,255,0,0.3);border-radius:16px;max-width:430px;width:100%;padding:42px 34px 36px;text-align:center!important;box-shadow:0 30px 80px rgba(0,0,0,0.55)}
+.thanks-card *{text-align:center!important}
+.thanks-icon{width:74px;height:74px;margin:0 auto 20px;border-radius:50%;background:rgba(212,255,0,0.12);display:flex;align-items:center;justify-content:center}
+.thanks-card h3{color:#fff;font-size:30px;margin:0 0 12px}
+.thanks-card p{color:#a7a7bd;font-size:15.5px;line-height:1.65;margin:0 0 26px}
+.thanks-close{background:#d4ff00;color:#0c0c0c;border:none;font-weight:700;font-size:15px;padding:13px 38px;border-radius:999px;cursor:pointer;transition:0.3s ease}
+.thanks-close:hover{background:#ffffff}
     
 /* Layout fixes 2026-11-03: uniform project grid + proper View All button */
 .ourwork-row{align-items:stretch!important}
@@ -1245,11 +1254,11 @@
             <div class="row align-items-stretch contact-row">
                 <div class="col-lg-7">
                     <div class="contact-form-main">
-                        <form action="https://formsubmit.co/rabby.fleexstudio@gmail.com" method="POST">
+                        <form id="contactForm" action="https://formsubmit.co/rabby.fleexstudio@gmail.com" method="POST">
                             <input type="hidden" name="_subject" value="New project inquiry — from Portfolio">
                             <input type="hidden" name="_template" value="table">
                             <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next" value="https://abdul-rabby-portfolio.vercel.app/#contact">
+                            <input type="hidden" name="_next" value="https://abdul-rabby-portfolio.vercel.app/?thanks=1#contact">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="contact-input">
@@ -1434,6 +1443,16 @@
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
+<div class="thanks-overlay" id="thanksPopup" role="dialog" aria-modal="true">
+    <div class="thanks-card">
+        <div class="thanks-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#d4ff00" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <h3>Thank You!</h3>
+        <p>Your message has been sent successfully. Thanks for reaching out &mdash; I&rsquo;ll get back to you within 24 hours.</p>
+        <button type="button" class="thanks-close" id="thanksClose">Close</button>
+    </div>
+</div>
 <script>
 (function(){
   var LIMITS = { all: 9, frontend: 6, wordpress: 6, design: 99, webapp: 99 };
@@ -1459,6 +1478,40 @@
     var upd = function(){ psel.style.color = psel.value ? '#ffffff' : '#bdbdbd'; };
     psel.addEventListener('change', upd);
     upd();
+  }
+  var cform = document.getElementById('contactForm');
+  var popup = document.getElementById('thanksPopup');
+  function showThanks(){ if (popup) popup.classList.add('show'); }
+  function hideThanks(){ if (popup) popup.classList.remove('show'); }
+  var tclose = document.getElementById('thanksClose');
+  if (tclose) tclose.addEventListener('click', hideThanks);
+  if (popup) popup.addEventListener('click', function(e){ if (e.target === popup) hideThanks(); });
+  if (new URLSearchParams(window.location.search).get('thanks') === '1') {
+    showThanks();
+    history.replaceState(null, '', window.location.pathname + '#contact');
+  }
+  if (cform) {
+    cform.addEventListener('submit', function(e){
+      e.preventDefault();
+      var btn = cform.querySelector('button[type="submit"]');
+      var oldLabel = btn ? btn.innerHTML : '';
+      if (btn) { btn.disabled = true; btn.innerHTML = 'Sending...'; }
+      var data = {};
+      new FormData(cform).forEach(function(v, k){ data[k] = v; });
+      fetch('https://formsubmit.co/ajax/rabby.fleexstudio@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      }).then(function(r){ return r.json(); }).then(function(res){
+        if (String(res.success) === 'true') {
+          cform.reset();
+          var s2 = cform.querySelector('select[name="project_type"]');
+          if (s2) s2.style.color = '#bdbdbd';
+          if (btn) { btn.disabled = false; btn.innerHTML = oldLabel; }
+          showThanks();
+        } else { cform.submit(); }
+      }).catch(function(){ cform.submit(); });
+    });
   }
   applyLimit('all');
 })();
