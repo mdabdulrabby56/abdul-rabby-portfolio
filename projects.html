@@ -107,6 +107,12 @@
 .view-all-wrap{text-align:center;margin-top:44px}
 .view-all-btn{display:inline-block;background:#d4ff00;color:#101016;font-family:var(--font-outfit);font-weight:700;font-size:17px;letter-spacing:.4px;padding:16px 44px;border-radius:60px;text-decoration:none;transition:.3s}
 .view-all-btn:hover{background:#fff;color:#101016}
+
+/* Layout fix v2 2026-11-03: CSS grid for the projects row so filtered views reflow cleanly */
+.ourwork-row{display:grid!important;grid-template-columns:repeat(3,1fr);gap:30px 0}
+.ourwork-row>.project-col{width:auto!important;max-width:none!important;flex:none!important}
+@media(max-width:1199px){.ourwork-row{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:767px){.ourwork-row{grid-template-columns:1fr}}
 </style>
 </head>
 
