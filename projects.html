@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects — Abdul Rabby</title>
+    <meta name="description" content="Abdul Rabby — Full Stack & WordPress Developer at Fleexstudio, Kushtia, Bangladesh. I build modern, fast, responsive WordPress & Elementor websites for clients worldwide.">
+    <meta name="keywords" content="Abdul Rabby, WordPress Developer, Full Stack Developer, Elementor Developer, Web Developer Bangladesh, Fleexstudio">
+    <meta name="author" content="Abdul Rabby">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b0b10">
+    <link rel="canonical" href="https://abdul-rabby-portfolio.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Abdul Rabby — Portfolio">
+    <meta property="og:title" content="Abdul Rabby — Web Developer & WordPress Developer">
+    <meta property="og:description" content="Abdul Rabby — Full Stack & WordPress Developer at Fleexstudio, Kushtia, Bangladesh. I build modern, fast, responsive WordPress & Elementor websites for clients worldwide.">
+    <meta property="og:url" content="https://abdul-rabby-portfolio.vercel.app/">
+    <meta property="og:image" content="https://abdul-rabby-portfolio.vercel.app/assets/images/home/profile-img.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Abdul Rabby — Web Developer & WordPress Developer">
+    <meta name="twitter:description" content="Abdul Rabby — Full Stack & WordPress Developer at Fleexstudio, Kushtia, Bangladesh. I build modern, fast, responsive WordPress & Elementor websites for clients worldwide.">
+    <meta name="twitter:image" content="https://abdul-rabby-portfolio.vercel.app/assets/images/home/profile-img.jpg">
+    <link rel="preload" as="image" href="assets/images/home/heroImg.webp" fetchpriority="high">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Abdul Rabby","url":"https://abdul-rabby-portfolio.vercel.app/","image":"https://abdul-rabby-portfolio.vercel.app/assets/images/home/profile-img.jpg","jobTitle":"Full Stack Developer & WordPress Developer","worksFor":{"@type":"Organization","name":"Fleexstudio","url":"https://fleexstudio.com/"},"address":{"@type":"PostalAddress","addressLocality":"Kushtia","addressCountry":"BD"},"email":"mailto:rabby.fleexstudio@gmail.com","sameAs":["https://github.com/mdabdulrabby56","https://www.behance.net/mdabdulrabby","https://www.linkedin.com/in/md-abdul-rabby-developer-106753320/"]}
+    </script>
+    <link rel="icon" type="image/x-icon" href="assets/images/home/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&amp;family=Outfit:wght@100..900&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-query.css">
+<style>
+        .header-menu{display:flex;gap:20px;align-items:center}
+        .header-menu a{color:#e9e9e9;font-family:'Outfit',sans-serif;font-size:13.5px;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;text-decoration:none;position:relative;padding:5px 0}
+        .header-menu a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:#d4ff00;transition:width .3s ease}
+        .header-menu a:hover{color:#d4ff00}
+        .header-menu a:hover::after{width:100%}
+        .header-cta{background:#d4ff00;color:#0b0b0f;font-family:'Outfit',sans-serif;font-size:14px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none;padding:12px 24px;border-radius:999px;white-space:nowrap;transition:background .3s ease,color .3s ease}
+        .header-cta:hover{background:#ffffff;color:#0b0b0f}
+        @media (max-width:1100px){.header-menu{display:none}}
+        @media (max-width:640px){.header-cta{display:none}}
+        header{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;width:100%;max-width:none;left:0;transform:none;padding:16px 20px}
+        .nav-logo{justify-self:center}
+        .header-menu{justify-self:center}
+        .header-right{display:flex;align-items:center;gap:14px;justify-self:center}
+        .about-card h3{font-size:14px!important;letter-spacing:1.6px;white-space:nowrap}
+        @media (max-width:480px){.about-card h3{font-size:11px!important}}
+        .heroImgPerson{filter:none!important}
+        #hero{position:relative}
+        .hero-person-main{top:13%!important;bottom:0!important;height:auto!important;width:min(620px,48vw)!important;right:4%}
+        @media (max-width:991px){.hero-person-main{width:100%!important}.hero-person-main .heroImgPerson{position:relative!important;inset:auto;width:100%!important;height:auto!important;object-fit:contain}}
+        .hero-person-main .heroImgPerson{position:absolute!important;inset:0;width:100%!important;height:100%!important;object-fit:contain;object-position:center bottom;transform:none}
+        .tech-badge{z-index:5!important}
+        .tech-badge.html{top:8%}
+        .portrait-placeholder img{filter:none!important}
+        .popup-social img,.contact-social img,.footer-social img{width:22px!important;height:22px!important;object-fit:contain}
+        .hero-person-main .heroImgPerson {
+            position: absolute !important;
+            inset: 0;
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: contain;
+            object-position: center bottom;
+            transform: none;
+            top: 10px;
+        }
+        @media (max-width:991px){
+            html,body{overflow-x:hidden}
+            .hero-inner,.hero-bottom,.hero-tagline,.eyebrow,.about-card,.about-bio,.lead-text,.service-card,.work-content,.blog-content,.testimonial-card,.pricing-card,.frontend-box,.backend-box,.skill-box-title,.contact-info-card,.contact-info-card span,.contact-info-card a,.contact-info-card p,.popup-left,.blog-popup-content,.footer-bottom,.footer-bottom p{text-align:left!important}
+            .hero-name{justify-content:flex-start!important}
+            .hero-cta-row{justify-content:flex-start!important}
+            .work-filter,.rv-tabs,.footer-social,.contact-social{justify-content:flex-start!important}
+            .hero-person-main{max-width:460px!important;justify-content:flex-start!important}
+            header{grid-template-columns:1fr auto!important}
+            .nav-logo{justify-self:start!important}
+            .header-right{justify-self:end!important}
+            .hero-person-main .heroImgPerson{position:relative!important;inset:auto!important;top:auto!important;width:100%!important;height:auto!important;object-fit:contain}
+            .big-title{text-align:left!important}
+            .text-center{text-align:left!important}
+            .eyebrow.text-center{justify-content:flex-start!important}
+            .lead-text{margin-left:0!important;margin-right:0!important}
+            .contact-info-card{align-items:flex-start!important}
+            .footer-flex{flex-direction:column!important;gap:35px!important}
+            .footer-left{max-width:100%!important}
+            .footer-right{text-align:left!important}
+            .footer-mail{font-size:20px!important;overflow-wrap:anywhere}
+        }
+            .work-desc{font-size:13.5px;line-height:1.55;color:#a7a7bd;margin:10px 0 16px}
+    </style>
+</head>
+
+<body>
+    <!-- ======================== Header ========================== -->
+    <header id="nav">
+        <a class='nav-logo' href='/'>AB.RABBY</a>
+        <nav class="header-menu">
+            <a href="/#hero">Home</a>
+            <a href="/#about">About</a>
+            <a href="/#skills">Skills</a>
+            <a href="/#services">Services</a>
+            <a href="/#projects">Portfolio</a>
+            <a href="/#resume">Resume</a>
+            <a href="/#blog">Blog</a>
+            <a href="/#contact">Contact</a>
+        </nav>
+        <div class="header-right">
+            <a href="/#contact" class="header-cta">Contact Me</a>
+            <button class="menu-toggle">
+                <i class="ti ti-menu-2"></i>
+            </button>
+        </div>
+    </header>
+    <div class="side-menu">
+        <a href="/#hero" class="nav-link"><i class="ti ti-home"></i>Home</a>
+        <a href="/#about" class="nav-link"><i class="ti ti-user"></i>About</a>
+        <a href="/#skills" class="nav-link"><i class="ti ti-code"></i>Skills</a>
+        <a href="/#services" class="nav-link"><i class="ti ti-layout-grid"></i>Services</a>
+        <a href="/#projects" class="nav-link"><i class="ti ti-briefcase"></i>Portfolio</a>
+        <a href="/#resume" class="nav-link"><i class="ti ti-file-text"></i>Resume</a>
+        <a href="/#blog" class="nav-link"><i class="ti ti-brand-blogger"></i>Blog</a>
+        <a href="/#contact" class="nav-link"><i class="ti ti-mail"></i>Contact</a>
+    </div>
+    <!-- ======================== PROJECTS  Section ========================== -->
+    <section id="projects" class="section-pad">
+        <div class="container">
+            <p class="sec-num">04</p>
+            <p class="eyebrow text-center rotate-text">Full Collection</p>
+            <h2 class="big-title text-center rotate-text">All <em>Projects</em></h2>
+            <p class="lead-text text-center rotate-text">Every project in one place — use the tabs to filter by category.</p>
+            <!-- FILTER -->
+            <div class="work-filter">
+                <button class="active" data-filter="all">
+                    All Work
+                </button>
+                <button data-filter="design">
+                    UI Design
+                </button>
+                <button data-filter="frontend">
+                    Frontend
+                </button>
+                <button data-filter="webapp">
+                    Web App
+                </button>
+                <button data-filter="wordpress">
+                    WordPress
+                </button>
+            </div>
+            <div class="row ourwork-row">
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="wordpress">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project1.jpg" alt="Tribeca Dental" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://tribeca.madrosemedia.com/" target="_blank" class="work-content">
+                            <span class="work-category">WordPress</span>
+                            <h3>Tribeca Dental</h3>
+                            <p class="work-desc">Dental clinic website for a New York practice — services, locations and online appointment booking.</p>
+                            <div class="work-tags">
+                                <span>WordPress</span>
+                                <span>Elementor</span>
+                                <span>Dental</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- CARD -->
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="wordpress">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project2.jpg" alt="Evans Exterminator" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://evansexterminator.com/" target="_blank" class="work-content">
+                            <span class="work-category">WordPress</span>
+                            <h3>Evans Exterminator</h3>
+                            <p class="work-desc">Pest control company website with service-area pages, free-estimate forms and a local SEO structure.</p>
+                            <div class="work-tags">
+                                <span>WordPress</span>
+                                <span>Elementor Pro</span>
+                                <span>Business</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- CARD -->
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="wordpress">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project3.jpg" alt="FleexStudio Hub" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://templates.fleexstudiohub.com/" target="_blank" class="work-content">
+                            <span class="work-category">WordPress</span>
+                            <h3>FleexStudio Hub</h3>
+                            <p class="work-desc">FleexStudio's own template library — ready-made WordPress templates for local service businesses.</p>
+                            <div class="work-tags">
+                                <span>WordPress</span>
+                                <span>Templates</span>
+                                <span>Agency</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- CARD -->
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project4.jpg" alt="RoofPro Template" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/roofpro-roofing-services-company-html-template/57922241" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>RoofPro Template</h3>
+                            <p class="work-desc">Roofing company website template with service pages and a quote-request flow.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Template</span>
+                                <span>Business</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- CARD -->
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="wordpress">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project5.jpg" alt="Corbin Website" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://corbinlanddev.wpenginepowered.com/" target="_blank" class="work-content">
+                            <span class="work-category">WordPress</span>
+                            <h3>Corbin Website</h3>
+                            <p class="work-desc">Land clearing &amp; management company website — services, work gallery and free-estimate requests.</p>
+                            <div class="work-tags">
+                                <span>WordPress</span>
+                                <span>Elementor</span>
+                                <span>Business</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+<div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project6.jpg" alt="Appure" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://appure.vercel.app" target="_blank" class="work-content">
+                            <span class="work-category">Frontend</span>
+                            <h3>Appure</h3>
+                            <p class="work-desc">Crypto app landing page with multiple demo versions, built with HTML, CSS and JavaScript.</p>
+                            <div class="work-tags">
+                                <span>JavaScript</span>
+                                <span>Web App</span>
+                                <span>Live Project</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project7.jpg" alt="SEOC" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/seoc-seo-digital-marketing-agency-html-template/52852528" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>SEOC</h3>
+                            <p class="work-desc">SEO & digital marketing agency HTML template — a ThemeForest bestseller with 440+ sales.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Marketing</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project8.jpg" alt="SolarP" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/solarp-ecology-wind-solar-energy-html-template/58389426" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>SolarP</h3>
+                            <p class="work-desc">Ecology, wind & solar energy company HTML template.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Energy</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project9.jpg" alt="Medicax" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/medicax-health-medical-hospital-html-template/56939626" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Medicax</h3>
+                            <p class="work-desc">Health, medical & hospital HTML template with appointment-ready layouts.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Medical</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project10.jpg" alt="Staffx" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/staffx-staffing-recruiting-agency-html-template/58540770" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Staffx</h3>
+                            <p class="work-desc">Staffing & recruiting agency HTML template.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Agency</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project11.jpg" alt="Finazze" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/finazze-business-and-finance-html-template/56332241" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Finazze</h3>
+                            <p class="work-desc">Business & finance HTML template for corporate and consulting sites.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Finance</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project12.jpg" alt="Arva" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/arva-multipurpose-business-consulting-html-template/63853105" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Arva</h3>
+                            <p class="work-desc">Multipurpose business consulting HTML template.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Consulting</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project13.jpg" alt="Ovro" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/ovro-resume-personal-portfolio-html-template/55664002" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Ovro</h3>
+                            <p class="work-desc">Resume & personal portfolio HTML template.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Portfolio</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project14.jpg" alt="Eitech" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/eitech-it-solutions-technology-startup-html-template/55421290" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Eitech</h3>
+                            <p class="work-desc">IT solutions & technology startup HTML template.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Technology</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project15.jpg" alt="Rebuilders" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/rebuilders-construction-building-agency-html-template/54798932" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Rebuilders</h3>
+                            <p class="work-desc">Construction & building agency HTML template.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Construction</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project16.jpg" alt="Hosue" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/hosue-single-property-apartment-html-template/54349319" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Hosue</h3>
+                            <p class="work-desc">Single property & apartment showcase HTML template.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Real Estate</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project17.jpg" alt="Current" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/current-electricity-services-html-template/52465823" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Current</h3>
+                            <p class="work-desc">Electricity services company HTML template.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Services</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project18.jpg" alt="Pico" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/pico-personal-portfolio-html-template/51666438" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Pico</h3>
+                            <p class="work-desc">Clean personal portfolio HTML template.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Portfolio</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project19.jpg" alt="Quad" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/quad-sass-startup-software-landing-page-html5-template/51236629" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Quad</h3>
+                            <p class="work-desc">SaaS startup & software landing page HTML template.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>SaaS</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project20.jpg" alt="Lawsy" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/lawsy-lawyer-law-firm-legal-attorney-consulting-html-template/50357379" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Lawsy</h3>
+                            <p class="work-desc">Lawyer, law firm & legal consulting HTML template.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Legal</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project21.jpg" alt="Consult" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/consult-law-finance-tax-business-consulting-html-template/48631436" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Consult</h3>
+                            <p class="work-desc">Law, finance, tax & business consulting HTML template.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Consulting</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project22.jpg" alt="Solar & Renewable Energy" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/fast-energy-solar-renewable-energy-html-template/46753947" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Solar & Renewable Energy</h3>
+                            <p class="work-desc">Solar & renewable energy company HTML template.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Energy</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project23.jpg" alt="Renev" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/renev-modern-creative-digital-agency-html-template/55938167" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Renev</h3>
+                            <p class="work-desc">Modern creative digital agency HTML template.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Agency</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project24.jpg" alt="Poolwash" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/poolwash-pool-cleaning-services-html-template/54544487" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Poolwash</h3>
+                            <p class="work-desc">Pool cleaning & maintenance services HTML template.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Services</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project25.jpg" alt="Homz" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/homz-real-estate-html-template/53612854" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Homz</h3>
+                            <p class="work-desc">Real estate HTML template with property listing layouts.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Real Estate</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="frontend">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project26.jpg" alt="Securix" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/securix-security-service-cctv-camera-system-html-template/52995370" target="_blank" class="work-content">
+                            <span class="work-category">HTML Template</span>
+                            <h3>Securix</h3>
+                            <p class="work-desc">Security service & CCTV camera system HTML template.</p>
+                            <div class="work-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap</span>
+                                <span>Security</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="design">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project27.jpg" alt="Advicx" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/advicx-business-consulting-figma-template/56971338" target="_blank" class="work-content">
+                            <span class="work-category">Figma UI Design</span>
+                            <h3>Advicx</h3>
+                            <p class="work-desc">Business consulting Figma UI template.</p>
+                            <div class="work-tags">
+                                <span>Figma</span>
+                                <span>UI Design</span>
+                                <span>Template</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="design">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project28.jpg" alt="Efolio" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/efolio-creative-portfolio-and-agency-figma-template/56971171" target="_blank" class="work-content">
+                            <span class="work-category">Figma UI Design</span>
+                            <h3>Efolio</h3>
+                            <p class="work-desc">Creative portfolio & agency Figma UI template.</p>
+                            <div class="work-tags">
+                                <span>Figma</span>
+                                <span>UI Design</span>
+                                <span>Template</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="design">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project29.jpg" alt="Recrute" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/recrute-staffing-recruiting-agency-figma-template/55431580" target="_blank" class="work-content">
+                            <span class="work-category">Figma UI Design</span>
+                            <h3>Recrute</h3>
+                            <p class="work-desc">Staffing & recruiting agency Figma UI template.</p>
+                            <div class="work-tags">
+                                <span>Figma</span>
+                                <span>UI Design</span>
+                                <span>Template</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="design">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project30.jpg" alt="SEOC Figma" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/seoc-seo-digital-marketing-agency-figma-template/55208538" target="_blank" class="work-content">
+                            <span class="work-category">Figma UI Design</span>
+                            <h3>SEOC Figma</h3>
+                            <p class="work-desc">SEO & digital marketing agency Figma UI template.</p>
+                            <div class="work-tags">
+                                <span>Figma</span>
+                                <span>UI Design</span>
+                                <span>Template</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex project-col">
+                    <div class="work-card" data-category="design">
+                        <div class="work-thumb">
+                            <img src="assets/images/project/project31.jpg" alt="Techxen" loading="lazy" decoding="async">
+                        </div>
+                        <a href="https://themeforest.net/item/techxen-it-solutions-technology-startup-figma-template/55389973" target="_blank" class="work-content">
+                            <span class="work-category">Figma UI Design</span>
+                            <h3>Techxen</h3>
+                            <p class="work-desc">IT solutions & technology startup Figma UI template.</p>
+                            <div class="work-tags">
+                                <span>Figma</span>
+                                <span>UI Design</span>
+                                <span>Template</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+        </div>
+    </section>
+    <footer class="onepage-footer">
+        <div class="footer-marquee">
+            <h2>
+                LET'S CREATE SOMETHING AMAZING —
+            </h2>
+        </div>
+        <div class="container">
+            <div class="footer-flex">
+                <div class="footer-left">
+                    <a href="https://abdul-rabby-portfolio.vercel.app/" class="footer-logo">
+                        AB.RABBY
+                    </a>
+                    <p>
+                        WordPress &amp; Web Developer crafting modern websites with Elementor, clean code and premium design.
+                    </p>
+                </div>
+                <!-- CENTER -->
+                <div class="footer-center">
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <a href="mailto:rabby.fleexstudio@gmail.com" class="footer-mail">
+                        rabby.fleexstudio@gmail.com
+                    </a>
+                    <div class="footer-social">
+                        <a href="https://github.com/mdabdulrabby56" target="_blank">
+                            <img src="assets/images/svg/github.svg" alt="github" loading="lazy" decoding="async">
+                        </a>
+                        <a href="https://www.behance.net/mdabdulrabby" target="_blank">
+                            <img src="assets/images/svg/behance.svg" alt="behance" loading="lazy" decoding="async">
+                        </a>
+                        <a href="https://www.linkedin.com/in/md-abdul-rabby-developer-106753320/" target="_blank">
+                            <img src="assets/images/svg/LinkedIn.svg" alt="linkedin" loading="lazy" decoding="async">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- BOTTOM -->
+            <div class="footer-bottom">
+                <p>© 2026 <a href="https://www.linkedin.com/in/md-abdul-rabby-developer-106753320/" target="_blank">ABDUL RABBY</a> — All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <a href="#hero" class="scroll-top">
+        <span class="scroll-progress"></span>
+        <i class="ti ti-arrow-up"></i>
+    </a>
+    <script src="assets/javascript/jquery.js"></script>
+    <script src="assets/javascript/gsap.js"></script>
+    <script src="assets/javascript/smooth-scroll.js"></script>
+    <script src="assets/javascript/swiper-bundle.min.js"></script>
+    <script src="assets/javascript/bootstrap.min.js"></script>
+    <script src="assets/javascript/split-text.js"></script>
+    <script src="assets/javascript/ScrollTrigger.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</body>
+
+
+
+</html>
