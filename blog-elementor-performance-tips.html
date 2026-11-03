@@ -76,14 +76,20 @@
         </div>
         <img class="article-img" src="assets/images/blog/blogImg3.jpg" alt="Elementor Performance Tips for Faster WordPress Sites">
         <div class="article-body">
-            <p>Elementor gets blamed for slow websites, but in my experience the builder is rarely the real problem. Most slow Elementor sites are slow because of how they are built — not what they are built with. These are the practices I use on client projects to keep Elementor sites fast.</p>
-            <h2>Keep the Layout Simple</h2>
-            <p>Every extra section, column and nested widget adds code to the page. Build with the fewest containers that achieve the design, avoid stacking multiple add-on packs, and remove widgets and features you are not using.</p>
+            <p>Elementor gets blamed for slow websites, but in my experience the builder is rarely the real problem. Most slow Elementor sites are slow because of how they are built &mdash; not what they are built with. These are the practices I use on client projects to keep Elementor sites fast.</p>
+            <h2>Start With a Lightweight Foundation</h2>
+            <p>Pair Elementor with a light theme such as Hello Elementor instead of a heavy multipurpose theme that loads features you will never use. Keep the plugin list short and purposeful &mdash; every plugin adds its own scripts and styles to every page, whether that page uses them or not.</p>
+            <h2>Build With Containers, Not Nested Sections</h2>
+            <p>Every extra section, column and nested widget adds code to the page. Elementor&rsquo;s Flexbox containers produce a much leaner structure than the old section-column-inside-section approach. Build each layout with the fewest containers that achieve the design, and avoid stacking multiple add-on packs that all do the same job.</p>
             <h2>Optimise Images Before You Upload</h2>
-            <p>Large images are the number one cause of slow Elementor pages. Resize images to the size they will actually display at, compress them, and use modern formats. A page should never load a 4000px photo into an 800px box.</p>
-            <div class="article-quote"><blockquote>&ldquo;Elementor is not slow — heavy pages are. Build light, and the builder flies.&rdquo;</blockquote></div>
-            <h2>Use Caching and a Clean Setup</h2>
-            <p>A good caching plugin, an up-to-date WordPress and PHP version, and decent hosting do more for speed than any single tweak. Combined with Elementor's own performance settings, they keep pages loading in a blink.</p>
+            <p>Large images are the number one cause of slow Elementor pages. Resize images to the size they will actually display at, compress them, and use modern formats like WebP. A page should never load a 4000px photo into an 800px box &mdash; and with image backgrounds, check the mobile version separately so phones are not downloading the desktop image.</p>
+            <div class="article-quote"><blockquote>&ldquo;Elementor is not slow &mdash; heavy pages are. Build light, and the builder flies.&rdquo;</blockquote></div>
+            <h2>Use Elementor&rsquo;s Own Performance Settings</h2>
+            <p>Elementor ships with performance options many people never open. In the settings you can switch CSS loading to the improved external-file method, control how Google Fonts load (or host fonts locally), and disable features and widgets the site does not use. Ten minutes in these settings can remove a surprising amount of weight from every page.</p>
+            <h2>Be Careful With Add-ons and Sliders</h2>
+            <p>Third-party add-on packs are convenient, but many load their assets across the whole site even when a widget appears on one page. Use one trusted pack instead of three, and think twice before adding a heavy slider where a clean hero section would load instantly and convert just as well.</p>
+            <h2>Cache, Hosting and Updates</h2>
+            <p>A good caching plugin, an up-to-date WordPress and PHP version, and decent hosting do more for speed than any single tweak. Combined with a light build, they keep pages loading in a blink &mdash; on desktop and, more importantly, on the phones your customers actually use.</p>
             <p>Faster pages mean happier visitors, better first impressions and more enquiries. That is why every Elementor website I deliver is checked for speed before it goes live.</p>
         </div>
         <div class="article-tags"><span>#Elementor</span><span>#WordPress</span><span>#Performance</span><span>#Speed</span></div>
