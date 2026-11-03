@@ -1,53 +1,80 @@
 %PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /Helvetica 4 0 R /Helvetica-Bold 5 0 R >> >> /Contents 6 0 R >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
 endobj
 5 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+<<
+/Contents 9 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 8 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 6 0 obj
-<< /Length 2295 >>
+<<
+/PageMode /UseNone /Pages 8 0 R /Type /Catalog
+>>
+endobj
+7 0 obj
+<<
+/Author (Abdul Rabby) /CreationDate (D:20261103090200+06'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261103090200+06'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (Abdul Rabby \204 CV) /Trapped /False
+>>
+endobj
+8 0 obj
+<<
+/Count 1 /Kids [ 5 0 R ] /Type /Pages
+>>
+endobj
+9 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2255
+>>
 stream
-BT /Helvetica-Bold 22 Tf 0.08 0.08 0.1 rg 56 780 Td (ABDUL RABBY) Tj ET
-BT /Helvetica-Bold 13 Tf 0.35 0.55 0 rg 56 738.2 Td (Web Developer & WordPress Developer) Tj ET
-BT /Helvetica 10.5 Tf 0.25 0.25 0.25 rg 56 713.5 Td (Kushtia, Bangladesh  |  rabby.fleexstudio@gmail.com  |  fleexstudio.com) Tj ET
-BT /Helvetica 10.5 Tf 0.25 0.25 0.25 rg 56 697.225 Td (GitHub: github.com/mdabdulrabby56  |  Behance: behance.net/mdabdulrabby  |  Portfolio: abdul-rabby-portfolio.vercel.app) Tj ET
-BT /Helvetica-Bold 13 Tf 0.08 0.08 0.1 rg 56 680.95 Td (SKILLS) Tj ET
-BT /Helvetica 10.5 Tf 0.2 0.2 0.2 rg 56 656.25 Td (WordPress, Elementor & Elementor Pro, Custom Elementor Widget Development, WordPress Theme) Tj ET
-BT /Helvetica 10.5 Tf 0.2 0.2 0.2 rg 56 639.975 Td (Development, HTML5, CSS3, JavaScript, PHP, Figma to Website, Responsive Web Design, Git/GitHub, Vercel) Tj ET
-BT /Helvetica-Bold 13 Tf 0.08 0.08 0.1 rg 56 623.7 Td (SERVICES) Tj ET
-BT /Helvetica 10.5 Tf 0.2 0.2 0.2 rg 56 599.0 Td (WordPress Theme Development - Custom Elementor Widgets - Elementor Website Customization) Tj ET
-BT /Helvetica 10.5 Tf 0.2 0.2 0.2 rg 56 582.725 Td (Responsive Website Development - HTML to WordPress Conversion - WordPress Customization) Tj ET
-BT /Helvetica-Bold 13 Tf 0.08 0.08 0.1 rg 56 566.45 Td (EXPERIENCE) Tj ET
-BT /Helvetica-Bold 11 Tf 0.15 0.15 0.15 rg 56 541.75 Td (WordPress Developer - Fleexstudio \(UI/UX & Web Design Agency\), Kushtia) Tj ET
-BT /Helvetica 10.5 Tf 0.2 0.2 0.2 rg 56 524.7 Td (Building and customizing WordPress websites for agency clients: Figma designs to responsive) Tj ET
-BT /Helvetica 10.5 Tf 0.2 0.2 0.2 rg 56 508.42500000000007 Td (Elementor websites, custom Elementor widgets, speed and usability improvements.) Tj ET
-BT /Helvetica-Bold 11 Tf 0.15 0.15 0.15 rg 56 492.1500000000001 Td (Full Stack Web Developer - Project-Based Work) Tj ET
-BT /Helvetica 10.5 Tf 0.2 0.2 0.2 rg 56 475.1000000000001 Td (Designing and building complete websites and web interfaces with HTML, CSS, JavaScript and PHP.) Tj ET
-BT /Helvetica-Bold 13 Tf 0.08 0.08 0.1 rg 56 458.8250000000001 Td (SELECTED PROJECTS) Tj ET
-BT /Helvetica 10.5 Tf 0.2 0.2 0.2 rg 56 434.1250000000001 Td (Tribeca Dental - Evans Exterminator - FleexStudio Hub - RoofPro - Corbin Website - Appure \(appure.vercel.app\)) Tj ET
-endstream
+Gb!#\gN)"=&:O:So[>GG'!cCG_G:OV-R:Z`%Gi@1IMnp^-C.,)?&[IjO5HOk"<mkNY1Q`L.cE:SmQT*tqt0*FiEomimtCc?)4Y$sTGoRhJ8V>%bf2?,Sc!Q'QRb.XWYq[NJ7Ee&e'W8b%Y%N%:%-dsls<uBll(s::N0*XCBc^+d=_OT,to/Y0[T+XcYpgBh<XgM]n>!^R/J1ere5h4)=D/q_gB"bC.IWoGJpZ$MQVkU(8.*:gU0atbNN+HSa,F9@s$'\BO0[b!7QmOGAp=GBb86?!K_c;r[V:T^-mfB8SFR0D_MT589kssO0%f0TU0:g82:s#(d?lHX?gNcZOQ<k!mNkH]-]m(MpQV1(3.M^]2qX[r$bEC)']L\$"!nTVs14=i)Y&l.Yrc%k8SOU;#68c\^.!7QQ]dgl:'[*jc_+7(/_lA1E^a'&)-UMG$KHthUBE<JP+p(4sI4EN>]L+reR14+Q"n+[Qe@$2"]PqD>Xb,[]\:Ya#"7mO;%(cp*$'#_3/B1HnP.#ICYEoVIL]oW)$KJHh=C#U"6mO6KL&YHi3+QZsC@?MkbRl_r4V&d.N!9OquN9bKJab"%q4+XkGk3%]jZpa.q4hhk+ku70j[?CDa42+-6UqpXce+rd16kpq09_9>$RiVn+YZNn/k.Ua$a^m#hfq>;r>+S$0oC06E5t;RYZ5>>jm+DVr8K&%FSkJQlioeU\/U8IEiHW$!+ue[/ShFfYc<S->9p93@94;ms`,"HOe!Z?ob"4Q1aKnnU9^=[l=li!77XRW-Ag&qCdk[4I#9_f3E3\&EQ]H)Uj"9f)8_Sg@7,5_,>AXemqcB-&WUKi(0:kQMQ*VTbsT*gEWW4A]Eb3<+'`=E;KcjK,-;D@o9PFJm)`If&PG&@*#PSe;I?oR,uP.`r,-6c*o'6>WO91o;<=!Q./>LC8jUTUeO=&s:$_N7?$LoV)g5o9V:tiGC1)d3*t5+Ba%'i?Qjm0EX^,fr.[oI)du-$3+clq_T4PV[[IrY1e:mP'%33BPf]HR6@$MgDj7/VbuniP9a%6nDeeBOloa7ZH0WUITE>1!g=.Y*IBu5HSY7,(?>6%Zcd=npRY,SV+;?B,/IcO.LKG4LplER;Bm4E)J6ofS?\1S.uiu`@#7*"b.Ie*bEh_kiE9IP`QIc@lXY6')L`_9)q];FY?I>GVd>d\Wj#AKaiLhU+dK;QdOdmRX&Wa88cd<^IXH@8F-qbQ9sL(QdH2[Bj_-;,eBeZLcjR<O3ai4OnC5m%o\LCdC+3@a)/Bj9ahl)s[rhla2EMY%cVDUMMX[`'@aQ?Vo%tC[YZfKY=n5\FQYhTo3/NEK8e5nS@DbZNg7[##L92At!mJLET3:2dGuF>[llQ;(<-74-G-)a2070?X>I5C8AOiQo?=0ls3Pl[/fY2#4QirW0E;mpfrb-@B6%Ik0Js%ZTHsjX^>\)!$6nJQp$F3JU68rkg('.d(4NNs:Obrb_IC&-r64=NSOjl+bBKZ^`.@IMmAHd"L_^e9a,khEu5eJAZr7R3(6IZ,BC^9B<".nb!C,l0<4g4,:U2X.:].Aujo6-`3rIr2"CCl)7*';8T<qM<'dQf3G,U0ga8eG?[ft\1>QM!2+;FSD;,K@0(M[qe.`W=?JY24u,KufUe`.Ee*5`R`h5tM*R^eS"ReL8"tUme9`ef0>k%\cZ$:Im0cr$O[H$][WKd!9Y/+n_9lY$&0RIrRFbNe`8?n/Ne,=!-s<K/pd3G#d]?-(j/1<hjr7*ug49EPgkf,?SZur;6*4H/$K!'l$9eXJ4?eHq)%;%>km'Pg8TYF2\dr51;B:_[;)(6G*`ijT_,\fWWhJ?37.c4[HJ2HpHPDN"bQtLZ"n9's0'f@l:7A.`g=1pgsca!/G]]1E>q%J<aghe%`Jpg+N\3[G*Lb)FV];E>XU3E(N$(g9B#u59T+1Q/[\?Vt]I;VL6KF/_+k^4h92<p14Wd1s3/TG1moI`"nJR!hn1B[5SMf*9!d6jVh1MKB/i\T*Y.eqR(6eO]oT0'@>9E#hV6_a[V0N+S(W.-*4]teNCf<BK1%r.$KZrKtIHCp>QoXi$%`Kr2"S_>sUA>2DG[fpl2r_PC3os\EIoUC1r@%!;1FN!C!%5.+\_OP[Z:hWH!ACkflRuT,X0RS*=:o_<IioU3@OS'hq4i&d%N!j<n3^%2_K!5aTRcmB=jGe^0<$$f,RiM75f?T)>0hhclft<j9)j3=P(r00O?`@22@fmp&OI-ASt)+Coc@]CR%<rWeu'#2B~>endstream
 endobj
 xref
-0 7
+0 10
 0000000000 65535 f 
-0000000009 00000 n 
-0000000058 00000 n 
-0000000115 00000 n 
-0000000270 00000 n 
-0000000340 00000 n 
-0000000415 00000 n 
+0000000061 00000 n 
+0000000112 00000 n 
+0000000219 00000 n 
+0000000331 00000 n 
+0000000446 00000 n 
+0000000649 00000 n 
+0000000717 00000 n 
+0000001001 00000 n 
+0000001060 00000 n 
 trailer
-<< /Size 7 /Root 1 0 R >>
+<<
+/ID 
+[<38bea919098709a02831ab17f46e5ef5><38bea919098709a02831ab17f46e5ef5>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 7 0 R
+/Root 6 0 R
+/Size 10
+>>
 startxref
-2762
+3406
 %%EOF
