@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Md Abdul Rabby — Blog</title>
+    <link>https://abdul-rabby-portfolio.vercel.app/</link>
+    <atom:link href="https://abdul-rabby-portfolio.vercel.app/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Articles on web design, WordPress, Elementor and website speed by Md Abdul Rabby, Full Stack Developer at Fleexstudio, Kushtia, Bangladesh.</description>
+    <language>en</language>
+    <lastBuildDate>Wed, 11 Nov 2026 12:50:00 GMT</lastBuildDate>
+    <item>
+      <title>Elementor Performance Tips for Faster WordPress Sites</title>
+      <link>https://abdul-rabby-portfolio.vercel.app/blog-elementor-performance-tips.html</link>
+      <guid isPermaLink="true">https://abdul-rabby-portfolio.vercel.app/blog-elementor-performance-tips.html</guid>
+      <pubDate>Thu, 20 Aug 2026 09:00:00 GMT</pubDate>
+      <description>Elementor is not slow — heavy pages are. Practical Elementor performance tips from real client projects: simpler layouts, optimised images, caching and a clean setup.</description>
+      <media:content url="https://abdul-rabby-portfolio.vercel.app/assets/images/blog/blogImg3.jpg" type="image/jpeg" medium="image" />
+      <enclosure url="https://abdul-rabby-portfolio.vercel.app/assets/images/blog/blogImg3.jpg" type="image/jpeg" />
+    </item>
+    <item>
+      <title>How Fast Websites Improve SEO Rankings</title>
+      <link>https://abdul-rabby-portfolio.vercel.app/blog-fast-websites-seo-rankings.html</link>
+      <guid isPermaLink="true">https://abdul-rabby-portfolio.vercel.app/blog-fast-websites-seo-rankings.html</guid>
+      <pubDate>Tue, 18 Aug 2026 09:00:00 GMT</pubDate>
+      <description>Website speed affects both visitors and search rankings. Learn what slows a WordPress site down and the fixes that make the biggest difference — by Abdul Rabby.</description>
+      <media:content url="https://abdul-rabby-portfolio.vercel.app/assets/images/blog/blogImg2.jpg" type="image/jpeg" medium="image" />
+      <enclosure url="https://abdul-rabby-portfolio.vercel.app/assets/images/blog/blogImg2.jpg" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Why Clean UI Design Builds Better User Trust</title>
+      <link>https://abdul-rabby-portfolio.vercel.app/blog-clean-ui-design-trust.html</link>
+      <guid isPermaLink="true">https://abdul-rabby-portfolio.vercel.app/blog-clean-ui-design-trust.html</guid>
+      <pubDate>Sat, 15 Aug 2026 09:00:00 GMT</pubDate>
+      <description>Clean, well-organized UI design makes visitors trust your business. Abdul Rabby explains how clear layouts, readable typography and fast pages turn visitors into customers.</description>
+      <media:content url="https://abdul-rabby-portfolio.vercel.app/assets/images/blog/blogImg1.jpg" type="image/jpeg" medium="image" />
+      <enclosure url="https://abdul-rabby-portfolio.vercel.app/assets/images/blog/blogImg1.jpg" type="image/jpeg" />
+    </item>
+  </channel>
+</rss>
